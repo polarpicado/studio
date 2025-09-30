@@ -21,7 +21,7 @@ export default function ExperienceSection() {
         </div>
         <div className="mx-auto grid max-w-5xl gap-12 py-12">
           {dictionary.experience.experienceList.map((job) => (
-            <div key={job.company} className="grid gap-4 md:grid-cols-[1fr_250px] md:gap-8">
+            <div key={`${job.role}-${job.company}`} className="grid gap-4 md:grid-cols-[1fr_250px] md:gap-8">
               <div>
                 <h3 className="text-xl font-bold">{job.role}</h3>
                 <p className="text-base font-medium text-primary">
