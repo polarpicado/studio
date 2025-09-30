@@ -23,7 +23,7 @@ export const dictionary = {
     description: "Un resumen de las tecnologías y metodologías que domino.",
     skillList: [
       { id: "python", name: "Python", description: "Django, Scripting" },
-      { id: "n8n", name: "n8n", description: "Flujos de Automatización" },
+      { id: "n8n", name: "Flujos de Automatización", description: "n8n" },
       { id: "cloud", name: "Cloud & DevOps", description: "AWS, Azure, Git" },
       { id: "databases", name: "Bases de Datos", description: "MySQL, SQL Server, PostgreSQL" },
       { id: "containerization", name: "ITSM & Soporte", description: "ITIL, Soporte Técnico" },
@@ -172,5 +172,3 @@ export const dictionary = {
     send: "Enviar",
   },
 };
-
-    
