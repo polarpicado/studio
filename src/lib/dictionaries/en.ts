@@ -23,6 +23,7 @@ export const dictionary = {
     description: "A collection of technologies and methodologies I master.",
     skillList: [
       { id: "python", name: "Python", description: "Django, Scripting" },
+      { id: "n8n", name: "n8n", description: "Automation Workflows" },
       { id: "cloud", name: "Cloud & DevOps", description: "AWS, Azure, Git" },
       { id: "databases", name: "Databases", description: "MySQL, SQL Server, PostgreSQL" },
       { id: "containerization", name: "ITSM & Support", description: "ITIL, Tech Support" },
@@ -68,17 +69,6 @@ export const dictionary = {
         period: "Mar 2021 - Oct 2021",
         description:
           "Skills: Linux, Cloud Computing, Web Development, Agile Methodologies, Microsoft SQL Server, Logic Programming, Python, Django, MySQL, SQL, JavaScript, Amazon Web Services (AWS).",
-      },
-    ],
-  },
-  education: {
-    title: "Education",
-    description: "My academic background and specializations.",
-    educationList: [
-      {
-        degree: "Bachelor's in Computational Systems Engineering",
-        institution: "Universidad Privada del Norte",
-        period: "2018 - Feb 2023",
       },
     ],
   },
@@ -177,3 +167,5 @@ export const dictionary = {
     send: "Send",
   },
 };
+
+    

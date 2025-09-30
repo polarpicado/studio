@@ -23,6 +23,7 @@ export const dictionary = {
     description: "Un resumen de las tecnologías y metodologías que domino.",
     skillList: [
       { id: "python", name: "Python", description: "Django, Scripting" },
+      { id: "n8n", name: "n8n", description: "Flujos de Automatización" },
       { id: "cloud", name: "Cloud & DevOps", description: "AWS, Azure, Git" },
       { id: "databases", name: "Bases de Datos", description: "MySQL, SQL Server, PostgreSQL" },
       { id: "containerization", name: "ITSM & Soporte", description: "ITIL, Soporte Técnico" },
@@ -68,17 +69,6 @@ export const dictionary = {
         period: "mar. 2021 - oct. 2021",
         description:
           "Aptitudes: Linux, Computación en la nube, Desarrollo web, Metodologías ágiles, Microsoft SQL Server, Programación lógica, Python, Django, MySQL, SQL, JavaScript, Amazon Web Services (AWS).",
-      },
-    ],
-  },
-  education: {
-    title: "Educación",
-    description: "Mi formación académica y especializaciones.",
-    educationList: [
-      {
-        degree: "Bachillerato en Ingeniería de Sistemas Computacionales",
-        institution: "Universidad Privada del Norte",
-        period: "2018 - feb. 2023",
       },
     ],
   },
@@ -182,3 +172,5 @@ export const dictionary = {
     send: "Enviar",
   },
 };
+
+    
