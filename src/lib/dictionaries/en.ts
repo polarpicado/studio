@@ -3,6 +3,7 @@ export const dictionary = {
     nav: [
       { href: "#about", label: "About" },
       { href: "#skills", label: "Skills" },
+      { href: "#experience", label: "Experience" },
       { href: "#projects", label: "Projects" },
       { href: "#certifications", label: "Certifications" },
       { href: "#contact", label: "Contact" },
@@ -48,6 +49,33 @@ export const dictionary = {
         id: "databases",
         name: "Databases",
         description: "SQL (PostgreSQL) and NoSQL (MongoDB, Redis) proficiency.",
+      },
+    ],
+  },
+  experience: {
+    title: "Work Experience",
+    description: "My professional journey and key roles.",
+    experienceList: [
+      {
+        role: "Lead Automation Engineer",
+        company: "Cloud Corp",
+        period: "2020 - Present",
+        description:
+          "Led a team of engineers in designing and implementing scalable automation solutions. Reduced manual intervention by 80% through the development of a self-service automation platform.",
+      },
+      {
+        role: "DevOps Engineer",
+        company: "Tech Solutions Inc.",
+        period: "2018 - 2020",
+        description:
+          "Managed CI/CD pipelines, automated infrastructure provisioning, and improved system reliability. Implemented monitoring and alerting systems that reduced downtime by 30%.",
+      },
+      {
+        role: "Junior System Administrator",
+        company: "Global Web Services",
+        period: "2016 - 2018",
+        description:
+          "Provided support for server infrastructure, managed user accounts, and performed regular system maintenance. Assisted in the migration of on-premise servers to a cloud environment.",
       },
     ],
   },

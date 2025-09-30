@@ -3,6 +3,7 @@ export const dictionary = {
     nav: [
       { href: "#about", label: "Sobre mí" },
       { href: "#skills", label: "Habilidades" },
+      { href: "#experience", label: "Experiencia" },
       { href: "#projects", label: "Proyectos" },
       { href: "#certifications", label: "Certificaciones" },
       { href: "#contact", label: "Contacto" },
@@ -54,6 +55,33 @@ export const dictionary = {
         name: "Bases de Datos",
         description:
           "Dominio de SQL (PostgreSQL) y NoSQL (MongoDB, Redis).",
+      },
+    ],
+  },
+  experience: {
+    title: "Experiencia Laboral",
+    description: "Mi trayectoria profesional y roles clave.",
+    experienceList: [
+      {
+        role: "Ingeniero Líder de Automatización",
+        company: "Cloud Corp",
+        period: "2020 - Presente",
+        description:
+          "Lideré un equipo de ingenieros en el diseño e implementación de soluciones de automatización escalables. Reduje la intervención manual en un 80% mediante el desarrollo de una plataforma de automatización de autoservicio.",
+      },
+      {
+        role: "Ingeniero DevOps",
+        company: "Tech Solutions Inc.",
+        period: "2018 - 2020",
+        description:
+          "Gestioné pipelines de CI/CD, automaticé el aprovisionamiento de infraestructura y mejoré la fiabilidad del sistema. Implementé sistemas de monitoreo y alertas que redujeron el tiempo de inactividad en un 30%.",
+      },
+      {
+        role: "Administrador de Sistemas Junior",
+        company: "Global Web Services",
+        period: "2016 - 2018",
+        description:
+          "Brindé soporte para la infraestructura de servidores, gestioné cuentas de usuario y realicé mantenimiento regular del sistema. Asistí en la migración de servidores locales a un entorno en la nube.",
       },
     ],
   },
