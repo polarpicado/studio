@@ -2,41 +2,69 @@ import {
   Cloud,
   Code,
   Database,
+  LucideIcon,
   Rocket,
   Server,
   Workflow,
 } from "lucide-react";
+
+export type Skill = {
+  id: string;
+  name: string;
+  icon: LucideIcon;
+  description: string;
+};
+
+export type Project = {
+  id: string,
+  title: string,
+  description: string,
+  technologies: string[],
+  imagePlaceholderId: string,
+};
+
+export type Certification = {
+  name: string;
+  issuer: string;
+  year: string;
+};
 
 export const professionalSummary =
   "I am a results-driven System Engineer and Automation Expert with a passion for building efficient, scalable, and robust cloud solutions. My expertise lies in leveraging Python, n8n, and various cloud technologies to streamline processes, automate complex workflows, and enhance system performance. I thrive on solving complex problems and am dedicated to continuous learning and improvement in the ever-evolving world of technology.";
 
 export const skills = [
   {
+    id: 'python',
     name: "Python",
     icon: Code,
     description: "Advanced scripting for automation and backend services.",
   },
   {
+    id: 'n8n',
     name: "n8n",
     icon: Workflow,
     description: "Designing and implementing complex automation workflows.",
   },
   {
+    id: 'cloud',
     name: "Cloud Solutions",
     icon: Cloud,
     description: "AWS, GCP, and Azure for scalable infrastructure.",
   },
   {
+    id: 'cicd',
     name: "CI/CD",
     icon: Rocket,
     description: "Jenkins, GitLab CI, and GitHub Actions for continuous integration.",
   },
   {
+    id: 'containerization',
     name: "Containerization",
     icon: Server,
     description: "Docker and Kubernetes for deploying and managing applications.",
   },
   {
+    id: 'databases',
     name: "Databases",
     icon: Database,
     description: "SQL (PostgreSQL) and NoSQL (MongoDB, Redis) proficiency.",

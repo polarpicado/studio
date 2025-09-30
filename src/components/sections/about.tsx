@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { professionalSummary } from '@/lib/data';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { Github, Linkedin, Youtube } from 'lucide-react';
+import { useLanguage } from '@/context/language-context';
 
 export default function AboutSection() {
   const profilePic = PlaceHolderImages.find(img => img.id === 'profile-pic');
+  const { dictionary } = useLanguage();
 
   return (
     <section id="about" className="w-full py-12 md:py-24 lg:py-32">
@@ -17,17 +18,17 @@ export default function AboutSection() {
               Joao Basanta
             </h1>
             <h2 className="text-xl text-primary md:text-2xl font-medium">
-              System Engineer & Automation Expert
+              {dictionary.about.jobTitle}
             </h2>
             <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              {professionalSummary}
+              {dictionary.about.professionalSummary}
             </p>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button asChild size="lg">
-                <Link href="#contact">Contact Me</Link>
+                <Link href="#contact">{dictionary.about.contactMe}</Link>
               </Button>
               <Button asChild variant="secondary" size="lg">
-                <Link href="#projects">View My Work</Link>
+                <Link href="#projects">{dictionary.about.viewMyWork}</Link>
               </Button>
             </div>
             <div className="flex items-center gap-4 pt-4">

@@ -1,3 +1,5 @@
+"use client";
+
 import AIAssistant from "@/components/ai-assistant";
 import Footer from "@/components/footer";
 import Header from "@/components/header";

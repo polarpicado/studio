@@ -17,6 +17,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { aiPortfolioAssistant } from "@/ai/flows/ai-portfolio-assistant";
 import { Avatar, AvatarFallback } from "./ui/avatar";
 import { cn } from "@/lib/utils";
+import { useLanguage } from "@/context/language-context";
 
 interface Message {
   role: "user" | "assistant";
@@ -24,11 +25,11 @@ interface Message {
 }
 
 export default function AIAssistant() {
+  const { dictionary } = useLanguage();
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "assistant",
-      content:
-        "Hello! I'm Joao's AI assistant. Ask me anything about his skills, experience, or projects.",
+      content: dictionary.aiAssistant.initialMessage,
     },
   ]);
   const [input, setInput] = useState("");
@@ -54,7 +55,7 @@ export default function AIAssistant() {
     } catch (error) {
       const errorMessage: Message = {
         role: "assistant",
-        content: "Sorry, I encountered an error. Please try again.",
+        content: dictionary.aiAssistant.errorMessage,
       };
       setMessages((prev) => [...prev, errorMessage]);
     } finally {
@@ -80,16 +81,16 @@ export default function AIAssistant() {
             className="fixed bottom-6 right-6 h-16 w-16 rounded-full shadow-lg"
           >
             <Sparkles className="h-8 w-8" />
-            <span className="sr-only">Open AI Assistant</span>
+            <span className="sr-only">{dictionary.aiAssistant.open}</span>
           </Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px] md:max-w-lg grid-rows-[auto_1fr_auto] p-0 max-h-[90dvh]">
           <DialogHeader className="p-6 pb-2">
             <DialogTitle className="flex items-center gap-2">
-              <Bot /> AI Portfolio Assistant
+              <Bot /> {dictionary.aiAssistant.title}
             </DialogTitle>
             <DialogDescription>
-              Ask me questions about Joao Basanta's work.
+              {dictionary.aiAssistant.description}
             </DialogDescription>
           </DialogHeader>
           <ScrollArea className="h-full" ref={scrollAreaRef}>
@@ -143,12 +144,12 @@ export default function AIAssistant() {
               <Input
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                placeholder="Ask about a project..."
+                placeholder={dictionary.aiAssistant.placeholder}
                 disabled={isLoading}
               />
               <Button type="submit" size="icon" disabled={isLoading}>
                 <Send className="h-4 w-4" />
-                <span className="sr-only">Send</span>
+                <span className="sr-only">{dictionary.aiAssistant.send}</span>
               </Button>
             </form>
           </DialogFooter>
