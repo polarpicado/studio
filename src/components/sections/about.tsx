@@ -1,11 +1,12 @@
-import Image from "next/image";
-import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { professionalSummary } from "@/lib/data";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { professionalSummary } from '@/lib/data';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { Github, Linkedin, Youtube } from 'lucide-react';
 
 export default function AboutSection() {
-  const profilePic = PlaceHolderImages.find((img) => img.id === "profile-pic");
+  const profilePic = PlaceHolderImages.find(img => img.id === 'profile-pic');
 
   return (
     <section id="about" className="w-full py-12 md:py-24 lg:py-32">
@@ -28,6 +29,38 @@ export default function AboutSection() {
               <Button asChild variant="secondary" size="lg">
                 <Link href="#projects">View My Work</Link>
               </Button>
+            </div>
+            <div className="flex items-center gap-4 pt-4">
+              <Link
+                href="https://github.com/polarpicado"
+                aria-label="GitHub"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" size="icon">
+                  <Github />
+                </Button>
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/joaobasanta/"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" size="icon">
+                  <Linkedin />
+                </Button>
+              </Link>
+              <Link
+                href="https://www.youtube.com/@PolarPicado"
+                aria-label="YouTube"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" size="icon">
+                  <Youtube />
+                </Button>
+              </Link>
             </div>
           </div>
           <div className="flex items-center justify-center">
