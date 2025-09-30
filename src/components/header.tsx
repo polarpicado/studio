@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Globe, Menu, X } from "lucide-react";
+import { Globe, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useIsMobile } from "@/hooks/use-mobile";
@@ -12,11 +12,12 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
+import { ThemeToggle } from "./theme-toggle";
 
 export default function Header() {
   const isMobile = useIsMobile();
   const [isSheetOpen, setIsSheetOpen] = useState(false);
-  const { dictionary, setLanguage } = useLanguage();
+  const { dictionary } = useLanguage();
 
   const handleLinkClick = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
@@ -61,6 +62,7 @@ export default function Header() {
         {isMobile ? (
           <div className="flex flex-1 items-center justify-end gap-2">
             <LanguageSwitcher />
+            <ThemeToggle />
             <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
@@ -77,6 +79,7 @@ export default function Header() {
           <nav className="flex items-center space-x-6 text-sm font-medium ml-auto">
             {navLinks}
             <LanguageSwitcher />
+            <ThemeToggle />
           </nav>
         )}
       </div>
@@ -85,7 +88,7 @@ export default function Header() {
 }
 
 function LanguageSwitcher() {
-  const { language, setLanguage } = useLanguage();
+  const { setLanguage } = useLanguage();
 
   return (
     <DropdownMenu>
