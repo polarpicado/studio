@@ -1,11 +1,26 @@
-import { Award, ExternalLink } from "lucide-react";
+"use client";
+
+import { Award, ExternalLink, ChevronDown } from "lucide-react";
 import { useLanguage } from "@/context/language-context";
 import Link from "next/link";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+
+const VISIBLE_ITEMS = 6;
 
 export default function CertificationsSection() {
   const { dictionary } = useLanguage();
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const visibleCerts = isExpanded
+    ? dictionary.certifications.certificationList
+    : dictionary.certifications.certificationList.slice(0, VISIBLE_ITEMS);
+
   return (
-    <section id="certifications" className="w-full py-12 md:py-24 lg:py-32 bg-muted/40">
+    <section
+      id="certifications"
+      className="w-full py-12 md:py-24 lg:py-32 bg-muted/40"
+    >
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
@@ -18,7 +33,7 @@ export default function CertificationsSection() {
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl gap-6 py-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {dictionary.certifications.certificationList.map((cert) => (
+          {visibleCerts.map((cert) => (
             <Link
               key={cert.name}
               href={cert.url}
@@ -41,6 +56,21 @@ export default function CertificationsSection() {
             </Link>
           ))}
         </div>
+        {dictionary.certifications.certificationList.length > VISIBLE_ITEMS && (
+          <div className="flex justify-center">
+            <Button
+              variant="outline"
+              onClick={() => setIsExpanded(!isExpanded)}
+            >
+              <span>{isExpanded ? "Mostrar menos" : "Mostrar más"}</span>
+              <ChevronDown
+                className={`ml-2 h-4 w-4 transition-transform ${
+                  isExpanded ? "rotate-180" : ""
+                }`}
+              />
+            </Button>
+          </div>
+        )}
       </div>
     </section>
   );

@@ -1,10 +1,19 @@
 "use client";
 
 import { useLanguage } from "@/context/language-context";
-import { Briefcase } from "lucide-react";
+import { Briefcase, ChevronDown } from "lucide-react";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+
+const VISIBLE_ITEMS = 3;
 
 export default function ExperienceSection() {
   const { dictionary } = useLanguage();
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const visibleJobs = isExpanded
+    ? dictionary.experience.experienceList
+    : dictionary.experience.experienceList.slice(0, VISIBLE_ITEMS);
 
   return (
     <section id="experience" className="w-full py-12 md:py-24 lg:py-32">
@@ -20,26 +29,37 @@ export default function ExperienceSection() {
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl gap-12 py-12">
-          {dictionary.experience.experienceList.map((job) => (
-            <div key={`${job.role}-${job.company}`} className="grid gap-4 md:grid-cols-[1fr_250px] md:gap-8">
+          {visibleJobs.map((job) => (
+            <div
+              key={`${job.role}-${job.company}`}
+              className="grid gap-4 md:grid-cols-[1fr_250px] md:gap-8"
+            >
               <div>
                 <h3 className="text-xl font-bold">{job.role}</h3>
                 <p className="text-base font-medium text-primary">
                   {job.company}
                 </p>
                 <div className="mt-2 text-sm text-muted-foreground">
-                    <p>{job.description}</p>
+                  <p>{job.description}</p>
                 </div>
               </div>
               <div className="flex flex-col items-start md:items-end">
                 <div className="flex items-center gap-2">
-                    <Briefcase className="h-4 w-4" />
-                    <span>{job.period}</span>
+                  <Briefcase className="h-4 w-4" />
+                  <span>{job.period}</span>
                 </div>
               </div>
             </div>
           ))}
         </div>
+        {dictionary.experience.experienceList.length > VISIBLE_ITEMS && (
+            <div className="flex justify-center">
+                <Button variant="outline" onClick={() => setIsExpanded(!isExpanded)}>
+                    <span>{isExpanded ? 'Mostrar menos' : 'Mostrar más'}</span>
+                    <ChevronDown className={`ml-2 h-4 w-4 transition-transform ${isExpanded ? 'rotate-180' : ''}`} />
+                </Button>
+            </div>
+        )}
       </div>
     </section>
   );
