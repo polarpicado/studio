@@ -2,60 +2,30 @@ export const dictionary = {
   header: {
     nav: [
       { href: "#about", label: "Sobre mí" },
-      { href: "#skills", label: "Habilidades" },
       { href: "#experience", label: "Experiencia" },
-      { href: "#projects", label: "Proyectos" },
+      { href: "#education", label: "Educación" },
+      { href: "#skills", label: "Habilidades" },
       { href: "#certifications", label: "Certificaciones" },
       { href: "#contact", label: "Contacto" },
     ],
   },
   about: {
-    jobTitle: "Ingeniero de Sistemas y Experto en Automatización",
+    jobTitle: "Ingeniero de Sistemas Computacionales",
     professionalSummary:
       "Soy un Ingeniero de Sistemas y Experto en Automatización orientado a resultados, con una pasión por construir soluciones en la nube eficientes, escalables y robustas. Mi experiencia radica en el uso de Python, n8n y diversas tecnologías en la nube para optimizar procesos, automatizar flujos de trabajo complejos y mejorar el rendimiento del sistema. Me encanta resolver problemas complejos y estoy dedicado al aprendizaje y la mejora continuos en el mundo de la tecnología en constante evolución.",
     contactMe: "Contáctame",
     viewMyWork: "Ver mi trabajo",
   },
   skills: {
-    title: "Habilidades Técnicas",
-    description:
-      "Una colección de tecnologías que utilizo para construir sistemas robustos y eficientes.",
+    title: "Habilidades Clave",
+    description: "Un resumen de las tecnologías y metodologías que domino.",
     skillList: [
-      {
-        id: "python",
-        name: "Python",
-        description:
-          "Scripting avanzado para automatización y servicios de backend.",
-      },
-      {
-        id: "n8n",
-        name: "n8n",
-        description:
-          "Diseño e implementación de flujos de trabajo de automatización complejos.",
-      },
-      {
-        id: "cloud",
-        name: "Soluciones en la Nube",
-        description: "AWS, GCP y Azure para infraestructura escalable.",
-      },
-      {
-        id: "cicd",
-        name: "CI/CD",
-        description:
-          "Jenkins, GitLab CI y GitHub Actions para integración continua.",
-      },
-      {
-        id: "containerization",
-        name: "Contenerización",
-        description:
-          "Docker y Kubernetes para desplegar y gestionar aplicaciones.",
-      },
-      {
-        id: "databases",
-        name: "Bases de Datos",
-        description:
-          "Dominio de SQL (PostgreSQL) y NoSQL (MongoDB, Redis).",
-      },
+      { id: "python", name: "Python", description: "Django, Scripting" },
+      { id: "cloud", name: "Cloud & DevOps", description: "AWS, Azure, Git" },
+      { id: "databases", name: "Bases de Datos", description: "MySQL, SQL Server, PostgreSQL" },
+      { id: "containerization", name: "ITSM & Soporte", description: "ITIL, Soporte Técnico" },
+      { id: "cicd", name: "Gestión", description: "Metodologías Ágiles, Scrum" },
+      { id: "code", name: "Análisis & Data", description: "Excel, Power BI, Big Data" },
     ],
   },
   experience: {
@@ -63,25 +33,50 @@ export const dictionary = {
     description: "Mi trayectoria profesional y roles clave.",
     experienceList: [
       {
-        role: "Ingeniero Líder de Automatización",
-        company: "Cloud Corp",
-        period: "2020 - Presente",
+        role: "Analista de operaciones de TI",
+        company: "Camposol",
+        period: "ago. 2023 - jun. 2025",
         description:
-          "Lideré un equipo de ingenieros en el diseño e implementación de soluciones de automatización escalables. Reduje la intervención manual en un 80% mediante el desarrollo de una plataforma de automatización de autoservicio.",
+          "Aptitudes: Computación en la nube, Microsoft Excel, Soporte técnico, Python, Aranda, Active Directory, Microsoft Azure.",
       },
       {
-        role: "Ingeniero DevOps",
-        company: "Tech Solutions Inc.",
-        period: "2018 - 2020",
+        role: "Practicante de Soporte e Incidencias",
+        company: "ALIGNET",
+        period: "sept. 2022 - ago. 2023",
         description:
-          "Gestioné pipelines de CI/CD, automaticé el aprovisionamiento de infraestructura y mejoré la fiabilidad del sistema. Implementé sistemas de monitoreo y alertas que redujeron el tiempo de inactividad en un 30%.",
+          "Aptitudes: Python, Computación en la nube, Soporte técnico, Metodologías ágiles, Control de versiones, Amazon Web Services (AWS).",
       },
       {
-        role: "Administrador de Sistemas Junior",
-        company: "Global Web Services",
-        period: "2016 - 2018",
+        role: "Líder del equipo de sistemas",
+        company: "Agencia Consigue Ventas Online",
+        period: "abr. 2022 - jun. 2022",
         description:
-          "Brindé soporte para la infraestructura de servidores, gestioné cuentas de usuario y realicé mantenimiento regular del sistema. Asistí en la migración de servidores locales a un entorno en la nube.",
+          "Aptitudes: Microsoft Excel, Desarrollo web, Metodologías ágiles, Liderazgo, Trabajo en equipo, Dirección y desarrollo de equipos de trabajo.",
+      },
+      {
+        role: "Desarrollador Backend Laravel",
+        company: "Agencia Consigue Ventas Online",
+        period: "mar. 2022 - abr. 2022",
+        description:
+          "Aptitudes: Desarrollo web, Metodologías ágiles, Control de versiones, Microsoft SQL Server.",
+      },
+      {
+        role: "Desarrollador de software",
+        company: "Grupo Casza",
+        period: "mar. 2021 - oct. 2021",
+        description:
+          "Aptitudes: Linux, Computación en la nube, Desarrollo web, Metodologías ágiles, Microsoft SQL Server, Programación lógica, Python, Django, MySQL, SQL, JavaScript, Amazon Web Services (AWS).",
+      },
+    ],
+  },
+  education: {
+    title: "Educación",
+    description: "Mi formación académica y especializaciones.",
+    educationList: [
+      {
+        degree: "Bachillerato en Ingeniería de Sistemas Computacionales",
+        institution: "Universidad Privada del Norte",
+        period: "2018 - feb. 2023",
       },
     ],
   },
@@ -121,24 +116,43 @@ export const dictionary = {
     description:
       "Mi compromiso con el aprendizaje continuo y el desarrollo profesional.",
     certificationList: [
-      {
-        name: "AWS Certified Solutions Architect - Associate",
-        issuer: "Amazon Web Services",
-        year: "2023",
-        url: "https://certificados.uni.edu.pe/verificador/search.php?cert_id=cert_263e2acd67e0e3d62edb290d09359470",
-      },
-      {
-        name: "Certified Kubernetes Administrator (CKA)",
-        issuer: "The Linux Foundation",
-        year: "2022",
-        url: "/#",
-      },
-      {
-        name: "n8n Pro Certification",
-        issuer: "n8n.io",
-        year: "2023",
-        url: "/#",
-      },
+      { name: 'CIENCIA DE DATOS 1: EXPLORATORY DATA ANALYSIS', issuer: 'Universidad Nacional de Ingeniería', year: 'ago. 2025', url: 'https://www.linkedin.com/company/1017841/' },
+      { name: 'Fundamentos de ITIL', issuer: 'Universidad Nacional de Ingeniería', year: 'ago. 2025', url: 'https://www.linkedin.com/company/1017841/' },
+      { name: 'MySQL', issuer: 'Skill - Centro de capacitación', year: 'ago. 2025', url: 'https://www.linkedin.com/company/77859874/' },
+      { name: 'PostgreSQL', issuer: 'Skill - Centro de capacitación', year: 'ago. 2025', url: 'https://www.linkedin.com/company/77859874/' },
+      { name: 'SQL Server', issuer: 'Skill - Centro de capacitación', year: 'ago. 2025', url: 'https://www.linkedin.com/company/77859874/' },
+      { name: 'Excel Avanzado', issuer: 'Fundación Telefónica', year: 'jun. 2025', url: 'https://www.linkedin.com/company/10331361/' },
+      { name: 'Introducción a Power BI', issuer: 'Fundación Telefónica', year: 'jun. 2025', url: 'https://www.linkedin.com/company/10331361/' },
+      { name: 'Principios Básicos de Big Data', issuer: 'Fundación Telefónica', year: 'jun. 2025', url: 'https://www.linkedin.com/company/10331361/' },
+      { name: 'Programación con Java Standard', issuer: 'Fundación Telefónica', year: 'jun. 2025', url: 'https://www.linkedin.com/company/10331361/' },
+      { name: 'CIBERSEGURIDAD: CYBERSOC', issuer: 'Universidad Nacional de Ingeniería', year: 'feb. 2025', url: 'https://www.linkedin.com/company/1017841/' },
+      { name: 'CIBERSEGURIDAD: ETHICAL HACKING', issuer: 'Universidad Nacional de Ingeniería', year: 'feb. 2025', url: 'https://www.linkedin.com/company/1017841/' },
+      { name: 'CIBERSEGURIDAD: PENTESTING CONTRA APLICACIONES WEB', issuer: 'Universidad Nacional de Ingeniería', year: 'feb. 2025', url: 'https://www.linkedin.com/company/1017841/' },
+      { name: 'CLOUD COMPUTING: AWS - AZURE - GOOGLE CLOUD', issuer: 'Universidad Nacional de Ingeniería', year: 'feb. 2025', url: 'https://www.linkedin.com/company/1017841/' },
+      { name: 'Python(Basic)', issuer: 'HackerRank', year: 'nov. 2022', url: 'https://www.linkedin.com/company/435210/' },
+      { name: 'Scrum Fundamentals Certified', issuer: 'Vabro.ai and VMEdu.com', year: 'nov. 2022', url: 'https://www.linkedin.com/company/2881003/' },
+      { name: 'AWS Cloud Practitioner Essentials Day', issuer: 'AWS Training Online', year: 'oct. 2022', url: 'https://www.linkedin.com/company/82109295/' },
+      { name: 'Desarrollo de Apps Móviles', issuer: 'Google Actívate', year: 'oct. 2022', url: 'https://www.linkedin.com/company/10195133/' },
+      { name: 'Creación de WebService API REST con Laravel', issuer: 'Udemy', year: 'mar. 2022', url: 'https://www.linkedin.com/company/822535/' },
+      { name: 'C# esencial', issuer: 'LinkedIn', year: 'feb. 2022', url: 'https://www.linkedin.com/company/1337/' },
+      { name: 'SQL Server For Analytics', issuer: 'WE Educación Ejecutiva', year: 'feb. 2022', url: 'https://www.linkedin.com/company/27218428/' },
+      { name: 'Worpress Básico', issuer: 'Fundación Telefónica', year: 'feb. 2022', url: 'https://www.linkedin.com/company/10331361/' },
+      { name: 'Fundamentos de big data', issuer: 'LinkedIn', year: 'ene. 2022', url: 'https://www.linkedin.com/company/1337/' },
+      { name: 'Fundamentos de la atención al cliente para profesionales IT', issuer: 'LinkedIn', year: 'ene. 2022', url: 'https://www.linkedin.com/company/1337/' },
+      { name: 'Fundamentos de la programación: Diseño orientado a objetos', issuer: 'LinkedIn', year: 'ene. 2022', url: 'https://www.linkedin.com/company/1337/' },
+      { name: 'Fundamentos de las matemáticas para programación', issuer: 'LinkedIn', year: 'ene. 2022', url: 'https://www.linkedin.com/company/1337/' },
+      { name: 'Pensamiento computacional', issuer: 'LinkedIn', year: 'ene. 2022', url: 'https://www.linkedin.com/company/1337/' },
+      { name: 'Git y Github Práctico', issuer: 'Udemy', year: 'dic. 2021', url: 'https://www.linkedin.com/company/822535/' },
+      { name: 'Office Intermedio', issuer: 'Fundación Telefónica', year: 'dic. 2021', url: 'https://www.linkedin.com/company/10331361/' },
+      { name: 'Introducción a Azure', issuer: 'Udemy', year: 'nov. 2021', url: 'https://www.linkedin.com/company/822535/' },
+      { name: 'Introducción al Desarrollo Web I', issuer: 'Google Actívate', year: 'ago. 2021', url: 'https://www.linkedin.com/company/10195133/' },
+      { name: 'Networking Essentials', issuer: 'Cisco Networking Academy', year: 'ago. 2021', url: 'https://www.linkedin.com/company/16202254/' },
+      { name: 'CCNAv7: Switching, Routing and Wireless Essentials', issuer: 'Cisco Networking Academy', year: 'jul. 2021', url: 'https://www.linkedin.com/company/16202254/' },
+      { name: 'Gestión de Proyectos con Metodologías Ágiles y Enfoques Lean', issuer: 'Fundación Telefónica', year: 'abr. 2021', url: 'https://www.linkedin.com/company/10331361/' },
+      { name: 'Introduction to Cibersecurity', issuer: 'Cisco Networking Academy', year: 'abr. 2021', url: 'https://www.linkedin.com/company/16202254/' },
+      { name: 'Get Connected', issuer: 'Cisco Networking Academy', year: 'mar. 2021', url: 'https://www.linkedin.com/company/16202254/' },
+      { name: 'La ciencia de datos: Poder en los números', issuer: 'Laureate Education, Inc.', year: 'mar. 2021', url: 'https://www.linkedin.com/company/164689/' },
+      { name: 'NDG Linux Unhatched', issuer: 'Cisco Networking Academy', year: 'feb. 2021', url: 'https://www.linkedin.com/company/16202254/' },
     ],
   },
   contact: {

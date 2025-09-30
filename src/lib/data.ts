@@ -69,6 +69,12 @@ export const skills = [
     icon: Database,
     description: "SQL (PostgreSQL) and NoSQL (MongoDB, Redis) proficiency.",
   },
+  {
+    id: 'code',
+    name: 'Code',
+    icon: Code,
+    description: "Generic code icon"
+  }
 ];
 
 export const projects = [
