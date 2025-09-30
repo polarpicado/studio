@@ -3,8 +3,8 @@ export const dictionary = {
     nav: [
       { href: "#about", label: "Sobre mí" },
       { href: "#experience", label: "Experiencia" },
-      { href: "#education", label: "Educación" },
       { href: "#skills", label: "Habilidades" },
+      { href: "#projects", label: "Proyectos" },
       { href: "#certifications", label: "Certificaciones" },
       { href: "#contact", label: "Contacto" },
     ],
