@@ -39,9 +39,6 @@ export default function AboutSection() {
               <Button asChild size="lg">
                 <Link href="#contact">{dictionary.about.contactMe}</Link>
               </Button>
-              <Button asChild variant="secondary" size="lg">
-                <Link href="#projects">{dictionary.about.viewMyWork}</Link>
-              </Button>
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10 hover:text-primary">

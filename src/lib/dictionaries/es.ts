@@ -14,7 +14,6 @@ export const dictionary = {
     professionalSummary:
       "Soy un Ingeniero de Sistemas y Experto en Automatización orientado a resultados, con una pasión por construir soluciones en la nube eficientes, escalables y robustas. Mi experiencia radica en el uso de Python, n8n y diversas tecnologías en la nube para optimizar procesos, automatizar flujos de trabajo complejos y mejorar el rendimiento del sistema. Me encanta resolver problemas complejos y estoy dedicado al aprendizaje y la mejora continuos en el mundo de la tecnología en constante evolución.",
     contactMe: "Contáctame",
-    viewMyWork: "Ver mi trabajo",
     downloadCV: "Currículo",
     english: "Inglés",
     spanish: "Español",
