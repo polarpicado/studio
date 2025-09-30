@@ -1,5 +1,6 @@
-import { Award } from "lucide-react";
+import { Award, ExternalLink } from "lucide-react";
 import { useLanguage } from "@/context/language-context";
+import Link from "next/link";
 
 export default function CertificationsSection() {
   const { dictionary } = useLanguage();
@@ -18,20 +19,26 @@ export default function CertificationsSection() {
         </div>
         <div className="mx-auto grid max-w-5xl gap-6 py-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {dictionary.certifications.certificationList.map((cert) => (
-            <div
+            <Link
               key={cert.name}
-              className="flex items-start gap-4 p-4 rounded-lg bg-card"
+              href={cert.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-4 p-4 rounded-lg bg-card hover:bg-card/90 transition-colors group"
             >
               <div className="bg-primary/10 text-primary p-3 rounded-full">
                 <Award className="h-6 w-6" />
               </div>
               <div className="flex-1">
-                <h3 className="text-base font-bold">{cert.name}</h3>
+                <h3 className="text-base font-bold flex items-center gap-2">
+                  {cert.name}
+                  <ExternalLink className="h-4 w-4 text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity" />
+                </h3>
                 <p className="text-sm text-muted-foreground">
                   {cert.issuer} - {cert.year}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
