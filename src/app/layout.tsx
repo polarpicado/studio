@@ -22,6 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link
+          href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css"
+          rel="stylesheet"
+        />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
@@ -38,19 +44,16 @@ export default function RootLayout({
             <Toaster />
           </LanguageProvider>
         </ThemeProvider>
-        <Script id="n8n-chat-config" strategy="lazyOnload">
+        <Script id="n8n-chat-widget" strategy="lazyOnload">
           {`
-            window.n8n = {
-              chat: {
-                webhookUrl: "http://localhost:5678/webhook/102f23af-804b-43a9-a0b4-a99329d7ae48/chat",
-              },
-            };
+            (async () => {
+              const { createChat } = await import('https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js');
+              createChat({
+                webhookUrl: 'http://localhost:5678/webhook/102f23af-804b-43a9-a0b4-a99329d7ae48/chat'
+              });
+            })();
           `}
         </Script>
-        <Script
-          src="https://cdn.jsdelivr.net/npm/n8n-chat/dist/v1/n8n-chat.js"
-          strategy="lazyOnload"
-        />
       </body>
     </html>
   );
