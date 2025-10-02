@@ -1,11 +1,8 @@
 "use client";
 
-import { useActionState, useEffect, useRef } from "react";
-import { useFormStatus } from "react-dom";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -14,7 +11,6 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { submitContactForm, type ContactFormState } from "@/app/actions";
 import { Send } from "lucide-react";
 import { useLanguage } from "@/context/language-context";
 
@@ -26,50 +22,18 @@ const contactSchema = z.object({
 
 type ContactFormData = z.infer<typeof contactSchema>;
 
-function SubmitButton() {
-  const { pending } = useFormStatus();
-  const { dictionary } = useLanguage();
-  return (
-    <Button type="submit" disabled={pending}>
-      {pending ? dictionary.contact.sending : dictionary.contact.sendMessage}
-      <Send className="ml-2 h-4 w-4" />
-    </Button>
-  );
-}
-
 export default function ContactSection() {
   const { dictionary } = useLanguage();
-  const initialState: ContactFormState = { message: "", success: false };
-  const [state, formAction] = useActionState(submitContactForm, initialState);
-  const { toast } = useToast();
-  const formRef = useRef<HTMLFormElement>(null);
+  const webhookUrl = process.env.NODE_ENV === 'production'
+    ? process.env.NEXT_PUBLIC_WEBHOOK_URL_PROD
+    : process.env.NEXT_PUBLIC_WEBHOOK_URL_TEST;
 
   const {
     register,
-    formState: { errors },
-    reset,
+    formState: { errors, isSubmitting },
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
   });
-
-  useEffect(() => {
-    if (state.message) {
-      if (state.success) {
-        toast({
-          title: "Success!",
-          description: state.message,
-        });
-        formRef.current?.reset();
-        reset();
-      } else {
-        toast({
-          title: "Error",
-          description: state.message,
-          variant: "destructive",
-        });
-      }
-    }
-  }, [state, toast, reset]);
   
   return (
     <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
@@ -85,10 +49,19 @@ export default function ContactSection() {
         <div className="mx-auto w-full max-w-sm lg:max-w-md">
           <Card>
             <CardContent className="p-6">
-              <form ref={formRef} action={formAction} className="space-y-4 text-left">
+              <form 
+                action={webhookUrl} 
+                method="POST" 
+                className="space-y-4 text-left"
+              >
                 <div className="space-y-2">
                   <Label htmlFor="name">{dictionary.contact.nameLabel}</Label>
-                  <Input id="name" {...register("name")} placeholder={dictionary.contact.namePlaceholder} />
+                  <Input 
+                    id="name" 
+                    {...register("name")}
+                    placeholder={dictionary.contact.namePlaceholder} 
+                    name="nombre"
+                  />
                   {errors.name && (
                     <p className="text-xs text-destructive">{errors.name.message}</p>
                   )}
@@ -100,6 +73,7 @@ export default function ContactSection() {
                     type="email"
                     {...register("email")}
                     placeholder={dictionary.contact.emailPlaceholder}
+                    name="correo"
                   />
                   {errors.email && (
                     <p className="text-xs text-destructive">{errors.email.message}</p>
@@ -112,12 +86,16 @@ export default function ContactSection() {
                     {...register("message")}
                     placeholder={dictionary.contact.messagePlaceholder}
                     className="min-h-[100px]"
+                    name="mensaje"
                   />
                   {errors.message && (
                     <p className="text-xs text-destructive">{errors.message.message}</p>
                   )}
                 </div>
-                <SubmitButton />
+                <Button type="submit" disabled={isSubmitting}>
+                  {isSubmitting ? dictionary.contact.sending : dictionary.contact.sendMessage}
+                  <Send className="ml-2 h-4 w-4" />
+                </Button>
               </form>
             </CardContent>
           </Card>
