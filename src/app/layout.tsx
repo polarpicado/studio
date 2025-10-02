@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 import { LanguageProvider } from "@/context/language-context";
 import { ThemeProvider } from "@/components/theme-provider";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -37,6 +38,19 @@ export default function RootLayout({
             <Toaster />
           </LanguageProvider>
         </ThemeProvider>
+        <Script id="n8n-chat-config" strategy="lazyOnload">
+          {`
+            window.n8n = {
+              chat: {
+                webhookUrl: "http://localhost:5678/webhook/102f23af-804b-43a9-a0b4-a99329d7ae48/chat",
+              },
+            };
+          `}
+        </Script>
+        <Script
+          src="https://cdn.jsdelivr.net/npm/n8n-chat/dist/v1/n8n-chat.js"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );

@@ -1,6 +1,5 @@
 "use client";
 
-import AIAssistant from "@/components/ai-assistant";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import AboutSection from "@/components/sections/about";
@@ -22,7 +21,6 @@ export default function Home() {
         <CertificationsSection />
         <ContactSection />
       </main>
-      <AIAssistant />
       <Footer />
     </div>
   );
