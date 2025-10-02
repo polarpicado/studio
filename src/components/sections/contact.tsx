@@ -13,6 +13,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Send } from "lucide-react";
 import { useLanguage } from "@/context/language-context";
+import { useToast } from "@/hooks/use-toast";
 
 const contactSchema = z.object({
   name: z.string().min(2, "Name is too short"),
@@ -24,16 +25,53 @@ type ContactFormData = z.infer<typeof contactSchema>;
 
 export default function ContactSection() {
   const { dictionary } = useLanguage();
+  const { toast } = useToast();
   const webhookUrl = process.env.NODE_ENV === 'production'
     ? process.env.NEXT_PUBLIC_WEBHOOK_URL_PROD
     : process.env.NEXT_PUBLIC_WEBHOOK_URL_TEST;
 
   const {
     register,
+    handleSubmit,
     formState: { errors, isSubmitting },
+    reset,
   } = useForm<ContactFormData>({
     resolver: zodResolver(contactSchema),
   });
+  
+  const onSubmit = async (data: ContactFormData) => {
+    if (!webhookUrl) {
+        console.error("Webhook URL is not defined.");
+        return;
+    }
+    
+    try {
+        const formData = new FormData();
+        formData.append("nombre", data.name);
+        formData.append("correo", data.email);
+        formData.append("mensaje", data.message);
+
+        const response = await fetch(webhookUrl, {
+            method: "POST",
+            body: formData,
+            mode: 'no-cors' // Use 'no-cors' if you don't need to read the response and face CORS issues
+        });
+
+        toast({
+            title: "¡Mensaje enviado!",
+            description: "Recibirás la respuesta pronto.",
+        });
+        reset();
+
+    } catch (error) {
+        console.error("Form submission error:", error);
+        toast({
+            variant: "destructive",
+            title: "Error",
+            description: "Hubo un problema al enviar el mensaje.",
+        });
+    }
+  };
   
   return (
     <section id="contact" className="w-full py-12 md:py-24 lg:py-32">
@@ -50,8 +88,7 @@ export default function ContactSection() {
           <Card>
             <CardContent className="p-6">
               <form 
-                action={webhookUrl} 
-                method="POST" 
+                onSubmit={handleSubmit(onSubmit)}
                 className="space-y-4 text-left"
               >
                 <div className="space-y-2">
@@ -60,7 +97,6 @@ export default function ContactSection() {
                     id="name" 
                     {...register("name")}
                     placeholder={dictionary.contact.namePlaceholder} 
-                    name="nombre"
                   />
                   {errors.name && (
                     <p className="text-xs text-destructive">{errors.name.message}</p>
@@ -73,7 +109,6 @@ export default function ContactSection() {
                     type="email"
                     {...register("email")}
                     placeholder={dictionary.contact.emailPlaceholder}
-                    name="correo"
                   />
                   {errors.email && (
                     <p className="text-xs text-destructive">{errors.email.message}</p>
@@ -86,7 +121,6 @@ export default function ContactSection() {
                     {...register("message")}
                     placeholder={dictionary.contact.messagePlaceholder}
                     className="min-h-[100px]"
-                    name="mensaje"
                   />
                   {errors.message && (
                     <p className="text-xs text-destructive">{errors.message.message}</p>
