@@ -16,8 +16,9 @@ export default function AboutSection() {
   const { dictionary } = useLanguage();
 
   const handleDownload = (language: 'en' | 'es') => {
-    // Replace with actual curriculum URLs
-    const url = language === 'en' ? '#' : '#';
+    const url = language === 'en' 
+      ? 'https://drive.google.com/file/d/1x8vaJ6AWcMh-UBdMpHD-vFYOTxyT5tXn/view?usp=drive_link' 
+      : 'https://drive.google.com/file/d/1ni61HX5k-fvntD2Jw5M5a0I76i8Dvf0d/view?usp=drive_link';
     window.open(url, '_blank');
   };
 
