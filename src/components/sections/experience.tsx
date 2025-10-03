@@ -45,8 +45,6 @@ export default function ExperienceSection() {
                     fill
                     className={`object-contain block dark:hidden rounded-full ${
                       job.company === 'Camposol' ? '' : 'border border-black'
-                    } ${
-                      job.company === 'ALIGNET' || job.company === 'Agencia Consigue Ventas Online' ? 'p-2' : ''
                     }`}
                   />
                   <Image
@@ -55,8 +53,6 @@ export default function ExperienceSection() {
                     fill
                     className={`object-contain hidden dark:block rounded-full ${
                       job.company === 'Camposol' ? '' : 'border border-white'
-                    } ${
-                      job.company === 'ALIGNET' || job.company === 'Agencia Consigue Ventas Online' ? 'p-2' : ''
                     }`}
                   />
                 </div>
