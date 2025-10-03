@@ -8,6 +8,13 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  experimental: {
+    // This is to allow the Next.js dev server to accept requests from the
+    // Firebase Studio environment.
+    allowedDevOrigins: [
+      '6000-firebase-studio-1759256087372.cluster-fsmcisrvfbb5cr5mvra3hr3qyg.cloudworkstations.dev',
+    ],
+  },
   images: {
     remotePatterns: [
       {
