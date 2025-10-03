@@ -33,9 +33,10 @@ export default function AboutSection() {
             <h2 className="text-xl text-primary md:text-2xl font-medium">
               {dictionary.about.jobTitle}
             </h2>
-            <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              {dictionary.about.professionalSummary}
-            </p>
+            <div
+              className="max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed space-y-4"
+              dangerouslySetInnerHTML={{ __html: dictionary.about.professionalSummary }}
+            />
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button asChild size="lg">
                 <Link href="#contact">{dictionary.about.contactMe}</Link>

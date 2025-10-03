@@ -12,7 +12,9 @@ export const dictionary = {
   about: {
     jobTitle: "Ingeniero de Sistemas Computacionales",
     professionalSummary:
-      "Soy un Ingeniero de Sistemas y Experto en Automatización orientado a resultados, con una pasión por construir soluciones en la nube eficientes, escalables y robustas. Mi experiencia radica en el uso de Python, n8n y diversas tecnologías en la nube para optimizar procesos, automatizar flujos de trabajo complejos y mejorar el rendimiento del sistema. Me encanta resolver problemas complejos y estoy dedicado al aprendizaje y la mejora continuos en el mundo de la tecnología en constante evolución.",
+      `<p>Soy un Ingeniero de Sistemas y Experto en Automatización orientado a resultados, con una pasión por construir <strong>soluciones en la nube eficientes, escalables y robustas</strong>.</p>
+       <p>Mi experiencia radica en el uso de <strong>Python, n8n y diversas tecnologías en la nube</strong> para optimizar procesos, automatizar flujos de trabajo complejos y mejorar el rendimiento del sistema.</p>
+       <p>Me encanta resolver problemas complejos y estoy dedicado al aprendizaje y la mejora continuos en el mundo de la tecnología en constante evolución.</p>`,
     contactMe: "Contáctame",
     downloadCV: "Currículo",
     english: "Inglés",

@@ -12,7 +12,9 @@ export const dictionary = {
   about: {
     jobTitle: "Computational Systems Engineer",
     professionalSummary:
-      "I am a results-driven System Engineer and Automation Expert with a passion for building efficient, scalable, and robust cloud solutions. My expertise lies in leveraging Python, n8n, and various cloud technologies to streamline processes, automate complex workflows, and enhance system performance. I thrive on solving complex problems and am dedicated to continuous learning and improvement in the ever-evolving world of technology.",
+      `<p>I am a results-driven System Engineer and Automation Expert with a passion for building <strong>efficient, scalable, and robust cloud solutions</strong>.</p>
+       <p>My expertise lies in leveraging <strong>Python, n8n, and various cloud technologies</strong> to streamline processes, automate complex workflows, and enhance system performance.</p>
+       <p>I thrive on solving complex problems and am dedicated to continuous learning and improvement in the ever-evolving world of technology.</p>`,
     contactMe: "Contact Me",
     downloadCV: "Resume",
     english: "English",
