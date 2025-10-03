@@ -7,22 +7,34 @@
       "imageHint": "professional portrait"
     },
     {
-      "id": "project-automation-platform",
-      "description": "Abstract visualization of an automation workflow.",
-      "imageUrl": "https://images.unsplash.com/photo-1758626052247-79003b45f802?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxhdXRvbWF0aW9uJTIwd29ya2Zsb3d8ZW58MHx8fHwxNzU5MjA5ODYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "automation workflow"
+      "id": "frogger-cpp",
+      "description": "Retro arcade game screen.",
+      "imageUrl": "https://images.unsplash.com/photo-1585881728919-5c0ce925ad10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXRybyUyMGdhbWluZ3xlbnwwfHx8fDE3NTk0NDUwNTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "retro gaming"
     },
     {
-      "id": "project-cloud-migration",
-      "description": "Stylized representation of cloud infrastructure.",
-      "imageUrl": "https://images.unsplash.com/photo-1730148005786-aa765c8ed5a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjbG91ZCUyMGluZnJhc3RydWN0dXJlfGVufDB8fHx8MTc1OTE5MTk3M3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "cloud infrastructure"
+      "id": "itsm-dashboard",
+      "description": "A dashboard with charts and graphs.",
+      "imageUrl": "https://images.unsplash.com/photo-1599658880436-c61792e70672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkYXRhJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc1OTM4MjIwMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data dashboard"
     },
     {
-      "id": "project-data-pipeline",
-      "description": "Lines of code on a screen representing a data pipeline.",
-      "imageUrl": "https://images.unsplash.com/photo-1551033406-611cf9a28f67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxhYnN0cmFjdCUyMGNvZGV8ZW58MHx8fHwxNzU5MjQxNzA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "abstract code"
+      "id": "crocdata-app",
+      "description": "A map showing data points.",
+      "imageUrl": "https://images.unsplash.com/photo-1586449480555-af85fd6ae850?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYXAlMjBkYXRhfGVufDB8fHx8MTc1OTQ1NTc1NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "map data"
+    },
+    {
+      "id": "portfoliochat-n8n",
+      "description": "A chatbot interface.",
+      "imageUrl": "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjaGF0JTIwaW50ZXJmYWNlfGVufDB8fHx8MTc1OTQwODM2MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chat interface"
+    },
+    {
+      "id": "n8n-formsaver",
+      "description": "A workflow automation diagram.",
+      "imageUrl": "https://images.unsplash.com/photo-1675627452903-082d0a77bc6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3b3JrZmxvdyUyMGRpYWdyYW18ZW58MHx8fHwxNzU5NDA0OTExfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "workflow diagram"
     }
   ]
 }

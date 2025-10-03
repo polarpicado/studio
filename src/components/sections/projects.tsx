@@ -10,6 +10,9 @@ import {
 import { useLanguage } from "@/context/language-context";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import { Github } from "lucide-react";
 
 export default function ProjectsSection() {
   const { dictionary } = useLanguage();
@@ -29,7 +32,7 @@ export default function ProjectsSection() {
         <div className="mx-auto grid grid-cols-1 gap-8 py-12 sm:grid-cols-2 lg:grid-cols-3">
           {dictionary.projects.projectList.map((project) => {
             const projectImage = PlaceHolderImages.find(
-              (img) => img.id === project.imagePlaceholderId
+              (img) => img.id === project.id
             );
             return (
               <Card key={project.id} className="flex flex-col overflow-hidden">
@@ -47,8 +50,7 @@ export default function ProjectsSection() {
                   <CardTitle>{project.title}</CardTitle>
                   <CardDescription>{project.description}</CardDescription>
                 </CardHeader>
-                <CardContent className="flex-grow" />
-                <CardFooter>
+                <CardContent className="flex-grow">
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech) => (
                       <Badge key={tech} variant="secondary">
@@ -56,6 +58,18 @@ export default function ProjectsSection() {
                       </Badge>
                     ))}
                   </div>
+                </CardContent>
+                <CardFooter>
+                  <Button asChild variant="outline" className="w-full">
+                    <Link
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Github className="mr-2" />
+                      GitHub
+                    </Link>
+                  </Button>
                 </CardFooter>
               </Card>
             );

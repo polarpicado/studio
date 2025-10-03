@@ -78,28 +78,43 @@ export const dictionary = {
       "Estos son algunos de los proyectos en los que estoy orgulloso de haber trabajado.",
     projectList: [
       {
-        id: "project-automation-platform",
-        title: "Plataforma de Automatización Empresarial",
+        id: "frogger-cpp",
+        title: "FroggerProyectoCPlusPlus",
         description:
-          "Lideré el desarrollo de una plataforma de automatización centralizada usando n8n y Python, integrando más de 20 servicios dispares de la empresa. Esto redujo el tiempo de procesamiento manual en un 90% y disminuyó significativamente el error humano.",
-        technologies: ["n8n", "Python", "Docker", "PostgreSQL", "RabbitMQ"],
-        imagePlaceholderId: "project-automation-platform",
+          "Se llevó a cabo una prueba para intentar hacer Frogger solamente con C++ y sin ninguna librería externa, utilizando el IDE Zinjal.",
+        technologies: ["C++"],
+        githubUrl: "https://github.com/polarpicado/FroggerProyectoCPlusPlus",
       },
       {
-        id: "project-cloud-migration",
-        title: "Migración de Infraestructura a la Nube",
-        description:
-          "Orquesté la migración de sistemas heredados locales a una arquitectura sin servidor y escalable en AWS. Implementé Infraestructura como Código (IaC) usando Terraform, mejorando la fiabilidad del despliegue y reduciendo los costos de infraestructura en un 40%.",
-        technologies: ["AWS (Lambda, S3, API Gateway)", "Terraform", "Python"],
-        imagePlaceholderId: "project-cloud-migration",
+        id: "itsm-dashboard",
+        title: "ITSM-Dashboard",
+        description: "Dashboard de IT Service Management con SQL, Python y Power BI.",
+        technologies: ["Python", "SQL", "Power BI", "HTML/CSS/JS", "Firebase"],
+        githubUrl: "https://github.com/polarpicado/ITSM-Dashboard",
       },
       {
-        id: "project-data-pipeline",
-        title: "Pipeline de Procesamiento de Datos en Tiempo Real",
+        id: "crocdata-app",
+        title: "CrocData-App",
         description:
-          "Diseñé y construí un pipeline de ingesta y procesamiento de datos en tiempo real para análisis. El sistema, construido con Python, Kafka y Spark, procesa millones de eventos por día, permitiendo inteligencia de negocio oportuna.",
-        technologies: ["Python", "Apache Kafka", "Apache Spark", "Kubernetes"],
-        imagePlaceholderId: "project-data-pipeline",
+          "Aplicación en AppSheet para gestionar y visualizar observaciones de cocodrilos a partir de datos abiertos del gobierno de Perú.",
+        technologies: ["AppSheet", "Google Sheets"],
+        githubUrl: "https://github.com/polarpicado/CrocData-App",
+      },
+      {
+        id: "portfoliochat-n8n",
+        title: "PortfolioChat-n8n",
+        description:
+          "Chatbot creado con n8n, Gemini AI y Google Sheets. Embebido en una web personal como asistente virtual.",
+        technologies: ["n8n", "Gemini AI", "Google Sheets"],
+        githubUrl: "https://github.com/polarpicado/PortfolioChat-n8n",
+      },
+      {
+        id: "n8n-formsaver",
+        title: "n8n-FormSaver",
+        description:
+          "Workflow en n8n para guardar datos de formularios web en Google Sheets sin usar bases de datos.",
+        technologies: ["WebHooks", "Google Sheets"],
+        githubUrl: "https://github.com/polarpicado/n8n-FormSaver",
       },
     ],
   },
