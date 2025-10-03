@@ -36,7 +36,9 @@ export default function ExperienceSection() {
               className="flex items-start gap-6 md:gap-8"
             >
               {job.logo_light && job.logo_dark && (
-                <div className="relative h-12 w-12 flex-shrink-0">
+                <div className={`relative flex-shrink-0 ${
+                    job.company === 'Camposol' ? 'h-14 w-14' : 'h-12 w-12'
+                }`}>
                   <Image
                     src={job.logo_light}
                     alt={`${job.company} logo`}
@@ -44,7 +46,7 @@ export default function ExperienceSection() {
                     className={`object-contain block dark:hidden rounded-full ${
                       job.company === 'Camposol' ? '' : 'border border-black'
                     } ${
-                      job.company === 'ALIGNET' || job.company === 'Agencia Consigue Ventas Online' ? 'p-1' : ''
+                      job.company === 'ALIGNET' || job.company === 'Agencia Consigue Ventas Online' ? 'p-2' : ''
                     }`}
                   />
                   <Image
@@ -54,7 +56,7 @@ export default function ExperienceSection() {
                     className={`object-contain hidden dark:block rounded-full ${
                       job.company === 'Camposol' ? '' : 'border border-white'
                     } ${
-                      job.company === 'ALIGNET' || job.company === 'Agencia Consigue Ventas Online' ? 'p-1' : ''
+                      job.company === 'ALIGNET' || job.company === 'Agencia Consigue Ventas Online' ? 'p-2' : ''
                     }`}
                   />
                 </div>
