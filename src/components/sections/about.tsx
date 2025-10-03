@@ -98,7 +98,7 @@ export default function AboutSection() {
                 data-ai-hint={profilePic.imageHint}
                 width={400}
                 height={400}
-                className="rounded-full object-cover aspect-square shadow-lg border-4 border-card"
+                className="rounded-lg object-cover aspect-square shadow-lg border-4 border-card"
               />
             )}
           </div>
