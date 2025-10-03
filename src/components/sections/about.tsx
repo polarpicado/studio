@@ -17,8 +17,8 @@ export default function AboutSection() {
 
   const handleDownload = (language: 'en' | 'es') => {
     const url = language === 'en' 
-      ? 'https://drive.google.com/file/d/1x8vaJ6AWcMh-UBdMpHD-vFYOTxyT5tXn/view?usp=drive_link' 
-      : 'https://drive.google.com/file/d/1ni61HX5k-fvntD2Jw5M5a0I76i8Dvf0d/view?usp=drive_link';
+      ? 'https://drive.google.com/file/d/1ZvBOkCCZSejsDhNCPDzIzKoOtcli2ESX/view?usp=drive_link' 
+      : 'https://drive.google.com/file/d/1ogw6_-7mKeFc8Krn5cQ-nq2mh4Gbk7LI/view?usp=drive_link';
     window.open(url, '_blank');
   };
 
