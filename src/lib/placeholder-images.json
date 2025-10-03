@@ -32,9 +32,9 @@
     },
     {
       "id": "frogger-cpp",
-      "description": "A pixel art frog from a game.",
-      "imageUrl": "https://images.unsplash.com/photo-1723151428839-8ea4ca4a50a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwaXhlbCUyMGFydCUyMGZyb2d8ZW58MHx8fHwxNzU5NDU1OTg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "pixel art frog"
+      "description": "A screenshot of the Frogger game recreated in C++.",
+      "imageUrl": "https://i.postimg.cc/DyfkpymB/unnamed.png",
+      "imageHint": "c++ game screenshot"
     }
   ]
 }
