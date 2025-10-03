@@ -73,17 +73,9 @@ export const dictionary = {
     ],
   },
   projects: {
-    title: "Featured Projects",
+    title: "Projects",
     description: "Here are some of the projects I'm proud to have worked on.",
     projectList: [
-      {
-        id: "frogger-cpp",
-        title: "FroggerProyectoCPlusPlus",
-        description:
-          "A test to try and make Frogger using only C++ with no external libraries, using the Zinjal IDE.",
-        technologies: ["C++"],
-        githubUrl: "https://github.com/polarpicado/FroggerProyectoCPlusPlus",
-      },
       {
         id: "itsm-dashboard",
         title: "ITSM-Dashboard",
@@ -115,6 +107,14 @@ export const dictionary = {
           "Workflow in n8n to save data from web forms to Google Sheets without using databases.",
         technologies: ["WebHooks", "Google Sheets"],
         githubUrl: "https://github.com/polarpicado/n8n-FormSaver",
+      },
+      {
+        id: "frogger-cpp",
+        title: "FroggerProyectoCPlusPlus",
+        description:
+          "A test to try and make Frogger using only C++ with no external libraries, using the Zinjal IDE.",
+        technologies: ["C++"],
+        githubUrl: "https://github.com/polarpicado/FroggerProyectoCPlusPlus",
       },
     ],
   },
@@ -183,3 +183,5 @@ export const dictionary = {
     send: "Send",
   },
 };
+
+    

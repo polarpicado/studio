@@ -3,38 +3,38 @@
     {
       "id": "profile-pic",
       "description": "A professional portrait of Joao Basanta.",
-      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTkyNDQ1MTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwcm9mZXNzaW9uYWwlMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTkzNjcyMjJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "professional portrait"
-    },
-    {
-      "id": "frogger-cpp",
-      "description": "Retro arcade game screen.",
-      "imageUrl": "https://images.unsplash.com/photo-1585881728919-5c0ce925ad10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXRybyUyMGdhbWluZ3xlbnwwfHx8fDE3NTk0NDUwNTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "retro gaming"
     },
     {
       "id": "itsm-dashboard",
       "description": "A dashboard with charts and graphs.",
-      "imageUrl": "https://images.unsplash.com/photo-1599658880436-c61792e70672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxkYXRhJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc1OTM4MjIwMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1542744173-05336fcc7ad4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXRhJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc1OTM4MjIwMHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "data dashboard"
     },
     {
       "id": "crocdata-app",
       "description": "A map showing data points.",
-      "imageUrl": "https://images.unsplash.com/photo-1586449480555-af85fd6ae850?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtYXAlMjBkYXRhfGVufDB8fHx8MTc1OTQ1NTc1NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1584291527905-f930791fb1ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bWFwJTIwZGF0YXxlbnwwfHx8fDE3NTk0NTU3NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "map data"
     },
     {
       "id": "portfoliochat-n8n",
-      "description": "A chatbot interface.",
-      "imageUrl": "https://images.unsplash.com/photo-1611606063065-ee7946f0787a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjaGF0JTIwaW50ZXJmYWNlfGVufDB8fHx8MTc1OTQwODM2MHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "chat interface"
+      "description": "A white chat cloud on a red background.",
+      "imageUrl": "https://images.unsplash.com/photo-1623915695133-d624f7759fd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGF0JTIwY2xvdWR8ZW58MHx8fHwxNzU5NDU1OTg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "chat cloud"
     },
     {
       "id": "n8n-formsaver",
-      "description": "A workflow automation diagram.",
-      "imageUrl": "https://images.unsplash.com/photo-1675627452903-082d0a77bc6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3b3JrZmxvdyUyMGRpYWdyYW18ZW58MHx8fHwxNzU5NDA0OTExfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "workflow diagram"
+      "description": "A form being submitted to a spreadsheet.",
+      "imageUrl": "https://images.unsplash.com/photo-1578016981482-d4dd3db297b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Zm9ybSUyMHNwcmVhZHNoZWV0fGVufDB8fHx8MTc1OTQ1NTk4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "form spreadsheet"
+    },
+    {
+      "id": "frogger-cpp",
+      "description": "A pixel art frog from a game.",
+      "imageUrl": "https://images.unsplash.com/photo-1723151428839-8ea4ca4a50a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwaXhlbCUyMGFydCUyMGZyb2d8ZW58MHx8fHwxNzU5NDU1OTg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pixel art frog"
     }
   ]
 }
