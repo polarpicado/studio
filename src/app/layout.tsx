@@ -10,7 +10,7 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "Basanta Portfolio | System Engineer & Automation Expert",
+  title: "Joao Basanta | Portafolio Web",
   description:
     "Explore the portfolio of Joao Basanta, a skilled system engineer specializing in Python, n8n, and cloud automation solutions. Discover projects, skills, and professional experience.",
 };
