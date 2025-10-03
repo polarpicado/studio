@@ -33,39 +33,39 @@ export default function ExperienceSection() {
           {visibleJobs.map((job) => (
             <div
               key={`${job.role}-${job.company}`}
-              className="grid gap-4 md:grid-cols-[1fr_250px] md:gap-8"
+              className="flex items-start gap-6 md:gap-8"
             >
-              <div>
-                <h3 className="text-xl font-bold">{job.role}</h3>
-                <div className="flex items-center gap-3">
+              {job.logo_light && job.logo_dark && (
+                <div className="relative h-12 w-12 flex-shrink-0">
+                  <Image
+                    src={job.logo_light}
+                    alt={`${job.company} logo`}
+                    fill
+                    className="object-contain block dark:hidden"
+                  />
+                  <Image
+                    src={job.logo_dark}
+                    alt={`${job.company} logo`}
+                    fill
+                    className="object-contain hidden dark:block"
+                  />
+                </div>
+              )}
+              <div className="grid gap-4 flex-1">
+                <div className="grid gap-1">
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                    <h3 className="text-xl font-bold">{job.role}</h3>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <Briefcase className="h-4 w-4" />
+                      <span>{job.period}</span>
+                    </div>
+                  </div>
                   <p className="text-base font-medium text-primary">
                     {job.company}
                   </p>
-                  {job.logo_light && job.logo_dark && (
-                    <div className="relative h-6 w-24">
-                      <Image
-                        src={job.logo_light}
-                        alt={`${job.company} logo`}
-                        fill
-                        className="object-contain block dark:hidden"
-                      />
-                      <Image
-                        src={job.logo_dark}
-                        alt={`${job.company} logo`}
-                        fill
-                        className="object-contain hidden dark:block"
-                      />
-                    </div>
-                  )}
-                </div>
-                <div className="mt-2 text-sm text-muted-foreground">
-                  <p>{job.description}</p>
-                </div>
-              </div>
-              <div className="flex flex-col items-start md:items-end">
-                <div className="flex items-center gap-2">
-                  <Briefcase className="h-4 w-4" />
-                  <span>{job.period}</span>
+                  <div className="mt-2 text-sm text-muted-foreground">
+                    <p>{job.description}</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -83,5 +83,3 @@ export default function ExperienceSection() {
     </section>
   );
 }
-
-    
