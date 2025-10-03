@@ -41,13 +41,21 @@ export default function ExperienceSection() {
                     src={job.logo_light}
                     alt={`${job.company} logo`}
                     fill
-                    className="object-contain block dark:hidden p-1 border border-black rounded-full"
+                    className={`object-contain block dark:hidden rounded-full ${
+                      job.company === 'Camposol' ? '' : 'border border-black'
+                    } ${
+                      job.company === 'ALIGNET' || job.company === 'Agencia Consigue Ventas Online' ? 'p-1' : ''
+                    }`}
                   />
                   <Image
                     src={job.logo_dark}
                     alt={`${job.company} logo`}
                     fill
-                    className="object-contain hidden dark:block p-1 border border-white rounded-full"
+                    className={`object-contain hidden dark:block rounded-full ${
+                      job.company === 'Camposol' ? '' : 'border border-white'
+                    } ${
+                      job.company === 'ALIGNET' || job.company === 'Agencia Consigue Ventas Online' ? 'p-1' : ''
+                    }`}
                   />
                 </div>
               )}
