@@ -28,7 +28,6 @@ export const dictionary = {
       { id: "databases", name: "Databases", description: "MySQL, SQL Server, PostgreSQL" },
       { id: "containerization", name: "ITSM & Support", description: "ITIL, Tech Support" },
       { id: "cicd", name: "Management", description: "Agile, Scrum" },
-      { id: "code", name: "Analysis & Data", description: "Excel, Power BI, Big Data" },
     ],
   },
   experience: {
