@@ -98,6 +98,7 @@ export const dictionary = {
           "Chatbot creado con n8n, Gemini AI y Google Sheets. Embebido en una web personal como asistente virtual.",
         technologies: ["n8n", "Gemini AI", "Google Sheets"],
         githubUrl: "https://github.com/polarpicado/PortfolioChat-n8n",
+        youtubeUrl: "https://www.youtube.com/watch?v=9ORxHFfZh_8"
       },
       {
         id: "n8n-formsaver",
@@ -110,8 +111,7 @@ export const dictionary = {
       {
         id: "frogger-cpp",
         title: "FroggerProyectoCPlusPlus",
-        description:
-          "Se llevó a cabo una prueba para intentar hacer Frogger solamente con C++ y sin ninguna librería externa, utilizando el IDE Zinjal.",
+        description: "Recreación del clásico juego Frogger utilizando C++ puro, sin bibliotecas externas, para demostrar un profundo conocimiento de los fundamentos de la programación y la lógica de juegos. Desarrollado en el IDE Zinjal.",
         technologies: ["C++"],
         githubUrl: "https://github.com/polarpicado/FroggerProyectoCPlusPlus",
       },

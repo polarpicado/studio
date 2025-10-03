@@ -12,7 +12,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Github } from "lucide-react";
+import { Github, Youtube } from "lucide-react";
 
 export default function ProjectsSection() {
   const { dictionary } = useLanguage();
@@ -59,17 +59,31 @@ export default function ProjectsSection() {
                     ))}
                   </div>
                 </CardContent>
-                <CardFooter>
-                  <Button asChild variant="outline" className="w-full">
-                    <Link
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Github className="mr-2" />
-                      GitHub
-                    </Link>
-                  </Button>
+                <CardFooter className="gap-2">
+                  {project.githubUrl && (
+                    <Button asChild variant="outline" className="w-full">
+                      <Link
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github className="mr-2" />
+                        GitHub
+                      </Link>
+                    </Button>
+                  )}
+                  {project.youtubeUrl && (
+                    <Button asChild variant="outline" className="w-full">
+                      <Link
+                        href={project.youtubeUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Youtube className="mr-2" />
+                        YouTube
+                      </Link>
+                    </Button>
+                  )}
                 </CardFooter>
               </Card>
             );
