@@ -3,7 +3,7 @@
     {
       "id": "profile-pic",
       "description": "A professional portrait of Joao Basanta.",
-      "imageUrl": "https://i.postimg.cc/G2VQSgHD/Imagen6.png",
+      "imageUrl": "https://storage.googleapis.com/aifirebase-1222a.appspot.com/users%2Fp5cI2E6649YfF43o3fS2Z8dYJvE2%2Fimage-1724083201455-0.png",
       "imageHint": "professional portrait"
     },
     {
@@ -27,13 +27,13 @@
     {
       "id": "n8n-formsaver",
       "description": "A form being submitted to a spreadsheet.",
-      "imageUrl": "https://images.unsplash.com/photo-1578016981482-d4dd3db297b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Zm9ybSUyMHNwcmVhZHNoZWV0fGVufDB8fHx8MTc1OTQ1NTk4NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1578016981482-d4dd3db297b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Zm9ybSUyMHNwcmVhZHNoZWV0fGVufDB8fHx8MTc1OTQ1NTk4NHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "form spreadsheet"
     },
     {
       "id": "frogger-cpp",
       "description": "A pixel art frog from a game.",
-      "imageUrl": "https://images.unsplash.com/photo-1723151428839-8ea4ca4a50a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwaXhlbCUyMGFydCUyMGZyb2d8ZW58MHx8fHwxNzU5NDU1OTg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1723151428839-8ea4ca4a50a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwaXhlbCUyMGFydCUyMGZyb2d8ZW58MHx8fHwxNzU5NDU1OTg0fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "pixel art frog"
     }
   ]
