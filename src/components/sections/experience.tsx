@@ -69,7 +69,7 @@ export default function ExperienceSection() {
                   <p className="text-base font-medium text-primary">
                     {job.company}
                   </p>
-                  <div className="mt-2 text-xs text-muted-foreground">
+                  <div className="mt-2 text-xs text-muted-foreground max-w-prose">
                     <p>{job.description}</p>
                   </div>
                 </div>
