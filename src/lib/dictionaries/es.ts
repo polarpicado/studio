@@ -40,6 +40,8 @@ export const dictionary = {
         period: "ago. 2023 - jun. 2025",
         description:
           "Aptitudes: Computación en la nube, Microsoft Excel, Soporte técnico, Python, Aranda, Active Directory, Microsoft Azure.",
+        logo_light: "https://i.postimg.cc/1zz7QfwL/camposol-black.png",
+        logo_dark: "https://i.postimg.cc/k55YmBK0/camposol-white.png",
       },
       {
         role: "Practicante de Soporte e Incidencias",
@@ -47,6 +49,8 @@ export const dictionary = {
         period: "sept. 2022 - ago. 2023",
         description:
           "Aptitudes: Python, Computación en la nube, Soporte técnico, Metodologías ágiles, Control de versiones, Amazon Web Services (AWS).",
+        logo_light: "https://i.postimg.cc/NjDCS19P/alignet-black.png",
+        logo_dark: "https://i.postimg.cc/rppZkK5L/alignet-white.png",
       },
       {
         role: "Líder del equipo de sistemas",
@@ -54,6 +58,8 @@ export const dictionary = {
         period: "abr. 2022 - jun. 2022",
         description:
           "Aptitudes: Microsoft Excel, Desarrollo web, Metodologías ágiles, Liderazgo, Trabajo en equipo, Dirección y desarrollo de equipos de trabajo.",
+        logo_light: "https://i.postimg.cc/cJJkSrwP/consigueventasonline-black.png",
+        logo_dark: "https://i.postimg.cc/bvvVhs1y/consigueventasonline-white.png",
       },
       {
         role: "Desarrollador Backend Laravel",
@@ -61,6 +67,8 @@ export const dictionary = {
         period: "mar. 2022 - abr. 2022",
         description:
           "Aptitudes: Desarrollo web, Metodologías ágiles, Control de versiones, Microsoft SQL Server.",
+        logo_light: "https://i.postimg.cc/cJJkSrwP/consigueventasonline-black.png",
+        logo_dark: "https://i.postimg.cc/bvvVhs1y/consigueventasonline-white.png",
       },
       {
         role: "Desarrollador de software",
@@ -68,6 +76,8 @@ export const dictionary = {
         period: "mar. 2021 - oct. 2021",
         description:
           "Aptitudes: Linux, Computación en la nube, Desarrollo web, Metodologías ágiles, Microsoft SQL Server, Programación lógica, Python, Django, MySQL, SQL, JavaScript, Amazon Web Services (AWS).",
+        logo_light: "https://i.postimg.cc/cJ5940cS/grupocasza-black.png",
+        logo_dark: "https://i.postimg.cc/QMn4xhqD/grupocasza-white.png",
       },
     ],
   },
@@ -186,5 +196,7 @@ export const dictionary = {
     send: "Enviar",
   },
 };
+
+    
 
     

@@ -40,6 +40,8 @@ export const dictionary = {
         period: "Aug 2023 - Jun 2025",
         description:
           "Skills: Cloud Computing, Microsoft Excel, Technical Support, Python, Aranda, Active Directory, Microsoft Azure.",
+        logo_light: "https://i.postimg.cc/1zz7QfwL/camposol-black.png",
+        logo_dark: "https://i.postimg.cc/k55YmBK0/camposol-white.png",
       },
       {
         role: "Support and Incidents Intern",
@@ -47,6 +49,8 @@ export const dictionary = {
         period: "Sep 2022 - Aug 2023",
         description:
           "Skills: Python, Cloud Computing, Technical Support, Agile Methodologies, Version Control, Amazon Web Services (AWS).",
+        logo_light: "https://i.postimg.cc/NjDCS19P/alignet-black.png",
+        logo_dark: "https://i.postimg.cc/rppZkK5L/alignet-white.png",
       },
       {
         role: "Systems Team Lead",
@@ -54,6 +58,8 @@ export const dictionary = {
         period: "Apr 2022 - Jun 2022",
         description:
           "Skills: Microsoft Excel, Web Development, Agile Methodologies, Leadership, Teamwork, Team Management.",
+        logo_light: "https://i.postimg.cc/cJJkSrwP/consigueventasonline-black.png",
+        logo_dark: "https://i.postimg.cc/bvvVhs1y/consigueventasonline-white.png",
       },
       {
         role: "Backend Laravel Developer",
@@ -61,6 +67,8 @@ export const dictionary = {
         period: "Mar 2022 - Apr 2022",
         description:
           "Skills: Web Development, Agile Methodologies, Version Control, Microsoft SQL Server.",
+        logo_light: "https://i.postimg.cc/cJJkSrwP/consigueventasonline-black.png",
+        logo_dark: "https://i.postimg.cc/bvvVhs1y/consigueventasonline-white.png",
       },
       {
         role: "Software Developer",
@@ -68,6 +76,8 @@ export const dictionary = {
         period: "Mar 2021 - Oct 2021",
         description:
           "Skills: Linux, Cloud Computing, Web Development, Agile Methodologies, Microsoft SQL Server, Logic Programming, Python, Django, MySQL, SQL, JavaScript, Amazon Web Services (AWS).",
+        logo_light: "https://i.postimg.cc/cJ5940cS/grupocasza-black.png",
+        logo_dark: "https://i.postimg.cc/QMn4xhqD/grupocasza-white.png",
       },
     ],
   },
@@ -182,5 +192,7 @@ export const dictionary = {
     send: "Send",
   },
 };
+
+    
 
     

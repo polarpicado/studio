@@ -4,6 +4,7 @@ import { useLanguage } from "@/context/language-context";
 import { Briefcase, ChevronDown } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const VISIBLE_ITEMS = 3;
 
@@ -36,9 +37,27 @@ export default function ExperienceSection() {
             >
               <div>
                 <h3 className="text-xl font-bold">{job.role}</h3>
-                <p className="text-base font-medium text-primary">
-                  {job.company}
-                </p>
+                <div className="flex items-center gap-3">
+                  <p className="text-base font-medium text-primary">
+                    {job.company}
+                  </p>
+                  {job.logo_light && job.logo_dark && (
+                    <div className="relative h-6 w-24">
+                      <Image
+                        src={job.logo_light}
+                        alt={`${job.company} logo`}
+                        fill
+                        className="object-contain block dark:hidden"
+                      />
+                      <Image
+                        src={job.logo_dark}
+                        alt={`${job.company} logo`}
+                        fill
+                        className="object-contain hidden dark:block"
+                      />
+                    </div>
+                  )}
+                </div>
                 <div className="mt-2 text-sm text-muted-foreground">
                   <p>{job.description}</p>
                 </div>
@@ -64,3 +83,5 @@ export default function ExperienceSection() {
     </section>
   );
 }
+
+    
