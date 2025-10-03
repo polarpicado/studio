@@ -41,13 +41,13 @@ export default function ExperienceSection() {
                     src={job.logo_light}
                     alt={`${job.company} logo`}
                     fill
-                    className="object-contain block dark:hidden"
+                    className="object-contain block dark:hidden p-1 border border-black rounded-md"
                   />
                   <Image
                     src={job.logo_dark}
                     alt={`${job.company} logo`}
                     fill
-                    className="object-contain hidden dark:block"
+                    className="object-contain hidden dark:block p-1 border border-white rounded-md"
                   />
                 </div>
               )}
@@ -63,7 +63,7 @@ export default function ExperienceSection() {
                   <p className="text-base font-medium text-primary">
                     {job.company}
                   </p>
-                  <div className="mt-2 text-sm text-muted-foreground">
+                  <div className="mt-2 text-xs text-muted-foreground">
                     <p>{job.description}</p>
                   </div>
                 </div>
