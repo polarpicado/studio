@@ -23,7 +23,7 @@ export function N8nChatWidget() {
 
         n8nChat.createChat({
           webhookUrl:
-            "http://localhost:5678/webhook/102f23af-804b-43a9-a0b4-a99329d7ae48/chat",
+            "https://caritive-corrosively-natalia.ngrok-free.dev/webhook/102f23af-804b-43a9-a0b4-a99329d7ae48/chat",
           defaultLanguage: "en",
           initialMessages: [
                   "Hi there! 👋",

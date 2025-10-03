@@ -49,7 +49,7 @@ export default function RootLayout({
             (async () => {
               const { createChat } = await import('https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js');
               createChat({
-                webhookUrl: 'http://localhost:5678/webhook/102f23af-804b-43a9-a0b4-a99329d7ae48/chat'
+                webhookUrl: 'https://caritive-corrosively-natalia.ngrok-free.dev/webhook/102f23af-804b-43a9-a0b4-a99329d7ae48/chat'
               });
             })();
           `}

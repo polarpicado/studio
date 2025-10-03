@@ -26,7 +26,7 @@ type ContactFormData = z.infer<typeof contactSchema>;
 export default function ContactSection() {
   const { dictionary } = useLanguage();
   const { toast } = useToast();
-  const webhookUrl = "http://localhost:5678/webhook/3c69ed05-e19f-4a9c-a7e2-5d7d8adad4f6";
+  const webhookUrl = "https://caritive-corrosively-natalia.ngrok-free.dev/webhook/3c69ed05-e19f-4a9c-a7e2-5d7d8adad4f6";
 
   const {
     register,
