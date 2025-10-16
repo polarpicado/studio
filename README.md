@@ -10,8 +10,8 @@ The portfolio showcases my skills, professional experience, projects, and certif
 -   **Language:** [TypeScript](https://www.typescriptlang.org/)
 -   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 -   **UI Components:** [ShadCN UI](https://ui.shadcn.com/)
--   **AI Functionality:** [Genkit (Google AI)](https://firebase.google.com/docs/genkit) with Gemini
--   **Chat:** [n8n Chat Widget](https://n8n.io/chat/)
+-   **AI Functionality:** [Genkit (Google AI)](https://firebase.google.com/docs/genkit) with Gemini 
+-   **Chat:** [n8n Chat Widget](https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-langchain.chattrigger/)
 -   **Forms:** [React Hook Form](https://react-hook-form.com/) & [Zod](https://zod.dev/)
 
 ## Getting Started
