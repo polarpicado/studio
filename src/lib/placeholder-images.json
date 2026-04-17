@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "profile-pic",
-      "description": "A stylized AI placeholder portrait for the website hero.",
-      "imageUrl": "/hero-ai-placeholder.svg",
-      "imageHint": "portrait illustration"
+      "description": "A professional portrait of Joao Basanta.",
+      "imageUrl": "https://i.postimg.cc/PJgvPjnx/Idea-1.png",
+      "imageHint": "professional portrait"
     },
     {
       "id": "chatbot-rag",
