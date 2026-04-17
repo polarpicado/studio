@@ -2,39 +2,39 @@
   "placeholderImages": [
     {
       "id": "profile-pic",
-      "description": "A professional portrait of Joao Basanta.",
-      "imageUrl": "https://i.postimg.cc/PJgvPjnx/Idea-1.png",
-      "imageHint": "professional portrait"
+      "description": "A stylized AI placeholder portrait for the website hero.",
+      "imageUrl": "/hero-ai-placeholder.svg",
+      "imageHint": "portrait illustration"
     },
     {
-      "id": "itsm-dashboard",
-      "description": "A dashboard with charts and graphs.",
-      "imageUrl": "https://images.unsplash.com/photo-1542744173-05336fcc7ad4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXRhJTIwZGFzaGJvYXJkfGVufDB8fHx8MTc1OTM4MjIwMHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "data dashboard"
+      "id": "chatbot-rag",
+      "description": "An AI assistant interface used in support operations.",
+      "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "ai support chat"
     },
     {
-      "id": "crocdata-app",
-      "description": "A map showing data points.",
-      "imageUrl": "https://i.postimg.cc/Gmd2Qsy1/unnamed.png",
-      "imageHint": "map data"
+      "id": "sap-etl",
+      "description": "A data automation workflow dashboard.",
+      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "etl dashboard"
     },
     {
-      "id": "portfoliochat-n8n",
-      "description": "A white chat cloud on a red background.",
-      "imageUrl": "https://images.unsplash.com/photo-1623915695133-d624f7759fd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGF0JTIwY2xvdWR8ZW58MHx8fHwxNzU5NDU1OTg0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "chat cloud"
+      "id": "report-automation",
+      "description": "A business report automation setup with spreadsheets and analytics.",
+      "imageUrl": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "report automation"
     },
     {
-      "id": "n8n-formsaver",
-      "description": "A form being submitted to a spreadsheet.",
-      "imageUrl": "https://images.unsplash.com/photo-1578016981482-d4dd3db297b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Zm9ybSUyMHNwcmVhZHNoZWV0fGVufDB8fHx8MTc1OTQ1NTk4NHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "form spreadsheet"
+      "id": "signature-generator",
+      "description": "A corporate identity setup workflow for employee signatures.",
+      "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "office workflow"
     },
     {
-      "id": "frogger-cpp",
-      "description": "A screenshot of the Frogger game recreated in C++.",
-      "imageUrl": "https://i.postimg.cc/DyfkpymB/unnamed.png",
-      "imageHint": "c++ game screenshot"
+      "id": "python-automation",
+      "description": "A Python automation environment with scripts and monitoring.",
+      "imageUrl": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "python automation"
     }
   ]
 }
