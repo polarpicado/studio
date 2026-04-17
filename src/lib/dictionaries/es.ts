@@ -136,78 +136,82 @@
     projectList: [
       {
         id: "chatbot-rag",
-        tag: "Soporte N1 + IA",
+        tag: "IA + Automatizacion",
         title: "Chatbot N1 con IA + RAG",
         summary:
-          "Asistente para resolver consultas frecuentes y apoyar la atencion inicial de soporte.",
+          "Plataforma de soporte con IA, tickets y base de conocimiento conectada a automatizaciones.",
         problem:
-          "El equipo recibia consultas repetitivas y la informacion estaba dispersa en documentos y bases internas.",
+          "Las consultas repetitivas consumian tiempo y la informacion estaba dispersa.",
         solution:
-          "Centralice respuestas con n8n, Gemini y RAG para consultar una base de conocimiento y responder al instante.",
+          "Integre chat, ServiceDesk, repository, API y n8n para responder y escalar desde un solo flujo.",
         result:
-          "Reduje la atencion manual de consultas repetitivas y acelere el soporte de primer nivel.",
+          "Mejor experiencia de soporte N1 y operacion lista para demo end-to-end.",
         metrics: [
-          { value: "-75%", label: "menos consultas manuales repetitivas" },
-          { value: "24/7", label: "atencion automatizada inicial" },
+          { value: "N1", label: "atencion automatizada de primer nivel" },
+          { value: "E2E", label: "chat, tickets y base conectados" },
         ],
-        technologies: ["n8n", "Gemini AI", "RAG", "Google Sheets"],
-        githubUrl: "https://github.com/polarpicado/PortfolioChat-n8n",
-        youtubeUrl: "https://www.youtube.com/watch?v=9ORxHFfZh_8",
+        technologies: ["FastAPI", "n8n", "MongoDB", "Qdrant", "RAG"],
+        githubUrl: "https://github.com/polarpicado/Proyecto-Automatizaci-n",
+        demoUrl: "https://caritive-corrosively-natalia.ngrok-free.dev/chat/",
       },
       {
-        id: "sap-etl",
-        tag: "Datos + SAP",
-        title: "Automatizacion ETL para SAP",
+        id: "portfolio-web",
+        tag: "Web personal",
+        title: "Portafolio Profesional (Next.js)",
         summary:
-          "Flujo ETL para extraer, transformar y consolidar informacion operativa desde SAP hacia reportes de uso diario.",
+          "Sitio personal para mostrar experiencia, proyectos, contacto y asistente IA.",
         problem:
-          "La consolidacion de datos desde SAP demandaba trabajo manual, validaciones repetitivas y tiempos altos de cierre.",
+          "Necesitaba una presencia profesional clara para reclutadores y lideres tecnicos.",
         solution:
-          "Reduje pasos manuales con un flujo ETL apoyado en PowerShell, VBA y archivos CSV/XLSX para limpiar, homologar y consolidar datos operativos.",
+          "Construccion de web moderna con secciones de impacto, chat y formulario conectado al backend.",
         result:
-          "Reduje la carga manual y deje un proceso mas estable y trazable para el equipo.",
+          "Portafolio online listo para demo, validacion tecnica y mejoras continuas.",
         metrics: [
-          { value: "-75%", label: "reduccion del trabajo manual" },
-          { value: "ETL", label: "flujo estable para consolidacion operativa" },
+          { value: "Full web", label: "perfil, proyectos y contacto" },
+          { value: "IA integrada", label: "chat conectado a n8n + API" },
         ],
-        technologies: ["PowerShell", "VBA", "SAP", "ETL", "CSV/XLSX"],
+        technologies: ["Next.js", "TypeScript", "Tailwind", "API Routes"],
+        githubUrl: "https://github.com/polarpicado/studio",
+        demoUrl: "https://jbasanta.vercel.app/",
       },
       {
-        id: "report-automation",
-        tag: "Reporting",
-        title: "Automatizacion de reportes operativos",
+        id: "crocdata-app",
+        tag: "AppSheet + datos",
+        title: "CrocData App",
         summary:
-          "Generacion automatica de reportes para seguimiento de indicadores y gestion diaria.",
+          "Aplicacion para visualizar y explorar datos de cocodrilos como practica en AppSheet.",
         problem:
-          "La construccion de reportes tomaba horas entre copias manuales, limpieza y armado de archivos.",
+          "Queria practicar AppSheet con un caso real y orientado a datos.",
         solution:
-          "Reduje trabajo manual con scripts y plantillas para generar reportes listos para revision.",
+          "Disene estructura de datos y vistas para consulta rapida de informacion.",
         result:
-          "Reduje el tiempo de elaboracion de reportes y mejore su frecuencia de actualizacion.",
+          "Proyecto funcional para aprender AppSheet y modelado de datos ligeros.",
         metrics: [
-          { value: "6h -> 30 min", label: "tiempo de generacion" },
-          { value: "diario", label: "ritmo de actualizacion mas consistente" },
+          { value: "AppSheet", label: "practica de no-code aplicada" },
+          { value: "Data", label: "consulta simple y ordenada" },
         ],
-        technologies: ["Python", "Excel", "VBA", "CSV/XLSX"],
-        githubUrl: "https://github.com/polarpicado/ITSM-Dashboard",
+        technologies: ["AppSheet", "Data modeling", "No-code"],
+        githubUrl: "https://github.com/polarpicado/CrocData-App",
+        demoUrl: "https://appsheet.com/start/54307ed6-edf2-4d1b-abd9-3f09b4963e9f",
       },
       {
-        id: "signature-generator",
-        tag: "Soporte interno",
-        title: "Generador de firmas con Active Directory",
+        id: "frogger-cpp",
+        tag: "Primer proyecto",
+        title: "Frogger en C++ (Consola)",
         summary:
-          "Automatizacion para crear firmas corporativas usando datos centralizados de usuarios.",
+          "Mi primer proyecto en C++: juego tipo Frogger en consola, sin librerias externas.",
         problem:
-          "La configuracion de firmas tomaba demasiado tiempo y se hacia manualmente por cada usuario.",
+          "Queria fortalecer logica de programacion y control del juego desde cero.",
         solution:
-          "Automatice la generacion de firmas usando datos de Active Directory y una plantilla unica.",
+          "Implemente movimiento, colisiones y reglas del juego solo con C++ y consola.",
         result:
-          "Reduje el tiempo de provision y elimine errores frecuentes de copiado manual.",
+          "Base solida en programacion estructurada y resolucion de problemas.",
         metrics: [
-          { value: "3h -> 10 s", label: "tiempo de configuracion por usuario" },
-          { value: "0 retrabajo", label: "por errores de copiado manual" },
+          { value: "C++ puro", label: "sin librerias externas" },
+          { value: "Consola", label: "motor simple hecho a mano" },
         ],
-        technologies: ["PowerShell", "Active Directory", "HTML", "Automatizacion"],
+        technologies: ["C++", "Consola", "Logica de juego"],
+        githubUrl: "https://github.com/polarpicado/FroggerProyectoCPlusPlus",
       },
     ],
   },

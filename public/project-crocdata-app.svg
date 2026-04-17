@@ -1,0 +1,58 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#0B1520"/>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g opacity="0.56" filter="url(#blur)">
+    <circle cx="252" cy="158" r="188" fill="#77E35D"/>
+    <circle cx="1226" cy="202" r="228" fill="#27D8C2"/>
+    <circle cx="1010" cy="724" r="236" fill="#1A7D6D"/>
+  </g>
+  <rect x="122" y="122" width="1356" height="656" rx="40" fill="rgba(11,21,32,0.72)" stroke="rgba(255,255,255,0.11)"/>
+  <rect x="178" y="180" width="1244" height="540" rx="32" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="228" y="230" width="306" height="440" rx="28" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="574" y="230" width="798" height="440" rx="28" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="264" y="266" width="120" height="20" rx="10" fill="#ECFFD8"/>
+  <rect x="264" y="300" width="172" height="12" rx="6" fill="white" fill-opacity="0.34"/>
+  <rect x="264" y="340" width="234" height="82" rx="22" fill="url(#sideCard)"/>
+  <rect x="264" y="450" width="234" height="82" rx="22" fill="rgba(119,227,93,0.15)" stroke="rgba(119,227,93,0.3)"/>
+  <rect x="264" y="560" width="234" height="82" rx="22" fill="rgba(39,216,194,0.15)" stroke="rgba(39,216,194,0.3)"/>
+  <path d="M624 284H1322" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+  <rect x="620" y="262" width="156" height="18" rx="9" fill="white" fill-opacity="0.76"/>
+  <rect x="1208" y="254" width="86" height="34" rx="17" fill="url(#pill)"/>
+  <path d="M716 590C778 478.667 855.333 416 948 402C1040.67 388 1148 424 1270 510" stroke="url(#path)" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="814" cy="466" r="16" fill="#77E35D"/>
+  <circle cx="962" cy="410" r="16" fill="#27D8C2"/>
+  <circle cx="1146" cy="438" r="16" fill="#27D8C2"/>
+  <circle cx="1280" cy="520" r="16" fill="#77E35D"/>
+  <rect x="686" y="330" width="620" height="286" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)"/>
+  <path d="M760 384L866 448L990 362L1098 418L1206 346V548H760V384Z" fill="url(#mapGlow)" fill-opacity="0.78"/>
+  <path d="M760 384L866 448L990 362L1098 418L1206 346" stroke="white" stroke-opacity="0.65" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="706" y="636" width="164" height="16" rx="8" fill="white" fill-opacity="0.72"/>
+  <rect x="706" y="666" width="208" height="12" rx="6" fill="white" fill-opacity="0.26"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C1822"/>
+      <stop offset="1" stop-color="#103B34"/>
+    </linearGradient>
+    <linearGradient id="sideCard" x1="264" y1="340" x2="498" y2="422" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#77E35D"/>
+      <stop offset="1" stop-color="#27D8C2"/>
+    </linearGradient>
+    <linearGradient id="pill" x1="1208" y1="254" x2="1294" y2="288" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3FFE8"/>
+      <stop offset="1" stop-color="#B5FFE3"/>
+    </linearGradient>
+    <linearGradient id="path" x1="716" y1="590" x2="1270" y2="510" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#77E35D"/>
+      <stop offset="1" stop-color="#27D8C2"/>
+    </linearGradient>
+    <linearGradient id="mapGlow" x1="760" y1="346" x2="1206" y2="548" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#85F765"/>
+      <stop offset="1" stop-color="#1FD0B7"/>
+    </linearGradient>
+    <filter id="blur" x="-246" y="-332" width="1842" height="1348" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_1_1"/>
+    </filter>
+  </defs>
+</svg>

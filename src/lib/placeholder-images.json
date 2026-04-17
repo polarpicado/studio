@@ -8,33 +8,57 @@
     },
     {
       "id": "chatbot-rag",
-      "description": "An AI assistant interface used in support operations.",
-      "imageUrl": "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      "imageHint": "ai support chat"
+      "description": "A cinematic AI support dashboard illustration with agent conversations and automation flows.",
+      "imageUrl": "/project-chatbot-rag.svg",
+      "imageHint": "ai support platform"
+    },
+    {
+      "id": "portfolio-web",
+      "description": "A polished portfolio website interface with sections, metrics, and AI integration.",
+      "imageUrl": "/project-portfolio-web.svg",
+      "imageHint": "portfolio website dashboard"
+    },
+    {
+      "id": "crocdata-app",
+      "description": "A vibrant data exploration scene for a wildlife AppSheet project.",
+      "imageUrl": "/project-crocdata-app.svg",
+      "imageHint": "appsheet data map"
+    },
+    {
+      "id": "frogger-cpp",
+      "description": "A retro-inspired console game scene reimagined as a cinematic project cover.",
+      "imageUrl": "/project-frogger-cpp.svg",
+      "imageHint": "retro console game"
     },
     {
       "id": "sap-etl",
-      "description": "A data automation workflow dashboard.",
-      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      "imageHint": "etl dashboard"
+      "description": "A futuristic ETL control panel for SAP data extraction and transformation.",
+      "imageUrl": "/project-sap-etl.svg",
+      "imageHint": "sap etl workflow"
     },
     {
       "id": "report-automation",
-      "description": "A business report automation setup with spreadsheets and analytics.",
-      "imageUrl": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      "imageHint": "report automation"
+      "description": "A polished analytics scene with automated reports and executive dashboards.",
+      "imageUrl": "/project-report-automation.svg",
+      "imageHint": "reporting automation"
     },
     {
       "id": "signature-generator",
-      "description": "A corporate identity setup workflow for employee signatures.",
-      "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      "imageHint": "office workflow"
+      "description": "A sleek identity automation visual for generating email signatures from directory data.",
+      "imageUrl": "/project-signature-generator.svg",
+      "imageHint": "identity automation"
     },
     {
       "id": "python-automation",
       "description": "A Python automation environment with scripts and monitoring.",
       "imageUrl": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
       "imageHint": "python automation"
+    },
+    {
+      "id": "appsheet-demo",
+      "description": "A clean AppSheet demo illustration for a published no-code project.",
+      "imageUrl": "/project-crocdata-app.svg",
+      "imageHint": "appsheet live demo"
     }
   ]
 }

@@ -1,0 +1,65 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#09131F"/>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g opacity="0.56" filter="url(#blurLg)">
+    <circle cx="264" cy="202" r="186" fill="#3CE3BF"/>
+    <circle cx="1186" cy="206" r="218" fill="#4BA6FF"/>
+    <circle cx="1032" cy="698" r="244" fill="#1637E9"/>
+  </g>
+  <rect x="114" y="114" width="1372" height="672" rx="40" fill="rgba(9,19,31,0.72)" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="184" y="186" width="546" height="528" rx="30" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="770" y="186" width="646" height="528" rx="30" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="228" y="226" width="174" height="22" rx="11" fill="#D8FFF7"/>
+  <rect x="228" y="264" width="224" height="14" rx="7" fill="white" fill-opacity="0.44"/>
+  <rect x="228" y="320" width="460" height="306" rx="30" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+  <rect x="268" y="362" width="380" height="68" rx="22" fill="url(#mailHead)"/>
+  <circle cx="318" cy="396" r="22" fill="rgba(255,255,255,0.22)"/>
+  <rect x="356" y="382" width="126" height="14" rx="7" fill="white"/>
+  <rect x="356" y="406" width="208" height="12" rx="6" fill="white" fill-opacity="0.5"/>
+  <rect x="268" y="458" width="380" height="126" rx="22" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="306" y="488" width="186" height="14" rx="7" fill="white" fill-opacity="0.7"/>
+  <rect x="306" y="520" width="278" height="12" rx="6" fill="white" fill-opacity="0.28"/>
+  <path d="M308 558C338 544.667 365.333 541.667 390 549C414.667 556.333 437.333 572.667 458 598C480 565.333 504 549.667 530 551C556 552.333 583.333 567.667 612 597" stroke="url(#signature)" stroke-width="10" stroke-linecap="round"/>
+  <rect x="820" y="222" width="546" height="102" rx="28" fill="url(#topCard)"/>
+  <rect x="820" y="362" width="256" height="302" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+  <rect x="1110" y="362" width="256" height="302" rx="28" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+  <rect x="854" y="256" width="172" height="20" rx="10" fill="white"/>
+  <rect x="854" y="290" width="244" height="14" rx="7" fill="white" fill-opacity="0.48"/>
+  <rect x="1190" y="252" width="128" height="28" rx="14" fill="#F1FCFF" fill-opacity="0.92"/>
+  <circle cx="948" cy="490" r="86" fill="rgba(60,227,191,0.15)" stroke="rgba(60,227,191,0.28)"/>
+  <path d="M906 488L936 518L992 460" stroke="url(#check)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="1144" y="438" width="188" height="20" rx="10" fill="white" fill-opacity="0.72"/>
+  <rect x="1144" y="472" width="154" height="14" rx="7" fill="white" fill-opacity="0.28"/>
+  <rect x="1144" y="524" width="140" height="52" rx="18" fill="url(#btn)"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1421"/>
+      <stop offset="1" stop-color="#11283C"/>
+    </linearGradient>
+    <linearGradient id="mailHead" x1="268" y1="362" x2="648" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#42E4C0"/>
+      <stop offset="1" stop-color="#4B77FF"/>
+    </linearGradient>
+    <linearGradient id="signature" x1="308" y1="558" x2="612" y2="597" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D2FFF8"/>
+      <stop offset="1" stop-color="#6FD5FF"/>
+    </linearGradient>
+    <linearGradient id="topCard" x1="820" y1="222" x2="1366" y2="324" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4BA6FF"/>
+      <stop offset="1" stop-color="#1637E9"/>
+    </linearGradient>
+    <linearGradient id="check" x1="906" y1="518" x2="992" y2="460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3CE3BF"/>
+      <stop offset="1" stop-color="#7EE7FF"/>
+    </linearGradient>
+    <linearGradient id="btn" x1="1144" y1="524" x2="1284" y2="576" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3CE3BF"/>
+      <stop offset="1" stop-color="#4BA6FF"/>
+    </linearGradient>
+    <filter id="blurLg" x="-206" y="-264" width="1780" height="1302" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="140" result="effect1_foregroundBlur_1_1"/>
+    </filter>
+  </defs>
+</svg>

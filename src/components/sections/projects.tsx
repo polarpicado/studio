@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Github, Youtube } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -35,6 +35,10 @@ export default function ProjectsSection() {
             const projectImage = PlaceHolderImages.find(
               (img) => img.id === project.id
             );
+            const demoUrl =
+              "demoUrl" in project && typeof project.demoUrl === "string"
+                ? project.demoUrl
+                : undefined;
 
             return (
               <Card
@@ -132,15 +136,15 @@ export default function ProjectsSection() {
                       </Link>
                     </Button>
                   )}
-                  {project.youtubeUrl && (
+                  {demoUrl && (
                     <Button asChild variant="outline" className="w-full rounded-full">
                       <Link
-                        href={project.youtubeUrl}
+                        href={demoUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        <Youtube className="mr-2" />
-                        YouTube
+                        <ExternalLink className="mr-2" />
+                        Demo
                       </Link>
                     </Button>
                   )}

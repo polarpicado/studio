@@ -1,0 +1,61 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#07131A"/>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g opacity="0.55" filter="url(#blurLg)">
+    <circle cx="285" cy="192" r="170" fill="#00E5A8"/>
+    <circle cx="1188" cy="194" r="214" fill="#1ED6FF"/>
+    <circle cx="996" cy="672" r="248" fill="#2B5BFF"/>
+  </g>
+  <rect x="122" y="122" width="1356" height="656" rx="38" fill="rgba(7,19,26,0.68)" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="172" y="170" width="414" height="560" rx="28" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+  <rect x="626" y="170" width="802" height="560" rx="28" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)"/>
+  <rect x="208" y="210" width="186" height="24" rx="12" fill="#B7FFF0" fill-opacity="0.9"/>
+  <rect x="208" y="252" width="280" height="18" rx="9" fill="#74D8C0" fill-opacity="0.6"/>
+  <rect x="208" y="308" width="342" height="118" rx="28" fill="url(#leftCard)"/>
+  <g opacity="0.9">
+    <rect x="236" y="336" width="120" height="18" rx="9" fill="white"/>
+    <rect x="236" y="370" width="258" height="14" rx="7" fill="white" fill-opacity="0.6"/>
+    <rect x="236" y="396" width="226" height="14" rx="7" fill="white" fill-opacity="0.45"/>
+  </g>
+  <rect x="208" y="458" width="254" height="94" rx="24" fill="rgba(0,229,168,0.16)" stroke="rgba(0,229,168,0.35)"/>
+  <rect x="208" y="576" width="314" height="118" rx="24" fill="rgba(30,214,255,0.14)" stroke="rgba(30,214,255,0.28)"/>
+  <rect x="670" y="224" width="232" height="74" rx="26" fill="url(#msg1)"/>
+  <rect x="944" y="334" width="348" height="92" rx="28" fill="url(#msg2)"/>
+  <rect x="746" y="472" width="290" height="82" rx="28" fill="url(#msg3)"/>
+  <rect x="1102" y="594" width="256" height="66" rx="22" fill="url(#cta)"/>
+  <rect x="686" y="640" width="366" height="18" rx="9" fill="white" fill-opacity="0.35"/>
+  <rect x="686" y="674" width="246" height="18" rx="9" fill="white" fill-opacity="0.18"/>
+  <circle cx="1288" cy="260" r="64" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.14)"/>
+  <path d="M1260 260C1260 244.536 1272.54 232 1288 232C1303.46 232 1316 244.536 1316 260C1316 275.464 1303.46 288 1288 288H1270L1260 298V260Z" fill="white"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A1620"/>
+      <stop offset="1" stop-color="#102B3A"/>
+    </linearGradient>
+    <linearGradient id="leftCard" x1="208" y1="308" x2="550" y2="426" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0ED7A2"/>
+      <stop offset="1" stop-color="#257AFF"/>
+    </linearGradient>
+    <linearGradient id="msg1" x1="670" y1="224" x2="902" y2="298" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1ED6FF"/>
+      <stop offset="1" stop-color="#2554FF"/>
+    </linearGradient>
+    <linearGradient id="msg2" x1="944" y1="334" x2="1292" y2="426" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#143242"/>
+      <stop offset="1" stop-color="#0C1F2B"/>
+    </linearGradient>
+    <linearGradient id="msg3" x1="746" y1="472" x2="1036" y2="554" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0ED7A2"/>
+      <stop offset="1" stop-color="#15A9C6"/>
+    </linearGradient>
+    <linearGradient id="cta" x1="1102" y1="594" x2="1358" y2="660" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#98D8FF"/>
+    </linearGradient>
+    <filter id="blurLg" x="-165" y="-256" width="1697" height="1328" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="140" result="effect1_foregroundBlur_1_1"/>
+    </filter>
+  </defs>
+</svg>

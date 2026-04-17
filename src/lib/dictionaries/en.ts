@@ -135,78 +135,82 @@ export const dictionary = {
     projectList: [
       {
         id: "chatbot-rag",
-        tag: "N1 Support + AI",
+        tag: "AI + Automation",
         title: "N1 Chatbot with AI + RAG",
         summary:
-          "Assistant for frequent queries and faster initial support.",
+          "Support platform with AI, tickets, and knowledge base connected to automation flows.",
         problem:
-          "The team received repetitive queries and key information was spread across documents and internal sources.",
+          "Repetitive queries consumed team time and information was fragmented.",
         solution:
-          "I centralized answers with n8n, Gemini, and RAG to search a knowledge base and reply instantly.",
+          "I connected chat, ServiceDesk, repository, API, and n8n into one automated flow.",
         result:
-          "I reduced manual handling of repetitive queries and made first-level support faster.",
+          "Better N1 support experience and end-to-end demo-ready operation.",
         metrics: [
-          { value: "-75%", label: "less repetitive manual support work" },
-          { value: "24/7", label: "automated initial attention" },
+          { value: "N1", label: "automated first-level support" },
+          { value: "E2E", label: "chat, tickets, and KB connected" },
         ],
-        technologies: ["n8n", "Gemini AI", "RAG", "Google Sheets"],
-        githubUrl: "https://github.com/polarpicado/PortfolioChat-n8n",
-        youtubeUrl: "https://www.youtube.com/watch?v=9ORxHFfZh_8",
+        technologies: ["FastAPI", "n8n", "MongoDB", "Qdrant", "RAG"],
+        githubUrl: "https://github.com/polarpicado/Proyecto-Automatizaci-n",
+        demoUrl: "https://caritive-corrosively-natalia.ngrok-free.dev/chat/",
       },
       {
-        id: "sap-etl",
-        tag: "Data + SAP",
-        title: "SAP ETL Automation",
+        id: "portfolio-web",
+        tag: "Personal website",
+        title: "Professional Portfolio (Next.js)",
         summary:
-          "ETL flow to extract, transform, and consolidate operational SAP data into daily reporting outputs.",
+          "My personal website to showcase experience, projects, contact, and AI assistant.",
         problem:
-          "SAP consolidation required manual work, repeated validations, and slow close cycles.",
+          "I needed a clear professional presence for recruiters and technical leaders.",
         solution:
-          "I reduced manual steps with an ETL flow built around PowerShell, VBA, and CSV/XLSX files to clean, standardize, and consolidate operational data.",
+          "Built a modern website with impact sections, chat, and backend-connected contact flow.",
         result:
-          "Manual load dropped and the process became more stable and traceable for the team.",
+          "Online portfolio ready for demos, technical validation, and continuous improvements.",
         metrics: [
-          { value: "-75%", label: "manual effort reduction" },
-          { value: "ETL", label: "stable operational consolidation flow" },
+          { value: "Full web", label: "profile, projects, and contact" },
+          { value: "AI integrated", label: "chat connected to n8n + API" },
         ],
-        technologies: ["PowerShell", "VBA", "SAP", "ETL", "CSV/XLSX"],
+        technologies: ["Next.js", "TypeScript", "Tailwind", "API Routes"],
+        githubUrl: "https://github.com/polarpicado/studio",
+        demoUrl: "https://jbasanta.vercel.app/",
       },
       {
-        id: "report-automation",
-        tag: "Reporting",
-        title: "Operational Reporting Automation",
+        id: "crocdata-app",
+        tag: "AppSheet + data",
+        title: "CrocData App",
         summary:
-          "Automatic report generation for daily indicators and operational follow-up.",
+          "Application to explore crocodile-related data as a practical AppSheet learning project.",
         problem:
-          "Reporting required hours of manual copy-paste, cleanup, and file assembly.",
+          "I wanted to practice AppSheet using a data-oriented use case.",
         solution:
-          "I reduced manual work with scripts and templates that generated review-ready reports.",
+          "Designed data structure and views for fast, easy information browsing.",
         result:
-          "I reduced report preparation time and improved refresh frequency.",
+          "Functional project for learning AppSheet and lightweight data modeling.",
         metrics: [
-          { value: "6h -> 30 min", label: "report generation time" },
-          { value: "daily", label: "more consistent update cadence" },
+          { value: "AppSheet", label: "hands-on no-code practice" },
+          { value: "Data", label: "simple and structured exploration" },
         ],
-        technologies: ["Python", "Excel", "VBA", "CSV/XLSX"],
-        githubUrl: "https://github.com/polarpicado/ITSM-Dashboard",
+        technologies: ["AppSheet", "Data modeling", "No-code"],
+        githubUrl: "https://github.com/polarpicado/CrocData-App",
+        demoUrl: "https://appsheet.com/start/54307ed6-edf2-4d1b-abd9-3f09b4963e9f",
       },
       {
-        id: "signature-generator",
-        tag: "Internal support",
-        title: "Signature Generator with Active Directory",
+        id: "frogger-cpp",
+        tag: "First project",
+        title: "Frogger in C++ (Console)",
         summary:
-          "Automation to create corporate signatures using centralized user information.",
+          "My first C++ project: a Frogger-style console game with zero external libraries.",
         problem:
-          "Signature setup took too long and was done manually user by user.",
+          "I wanted to strengthen core programming logic and build a game from scratch.",
         solution:
-          "I automated signature generation using Active Directory data and a single template.",
+          "Implemented movement, collisions, and game rules using only C++ and console rendering.",
         result:
-          "I reduced provisioning time and removed common copy-paste errors.",
+          "Built a strong base in structured programming and problem-solving.",
         metrics: [
-          { value: "3h -> 10 s", label: "setup time per user" },
-          { value: "0 rework", label: "from manual copy-paste errors" },
+          { value: "Pure C++", label: "no external libraries" },
+          { value: "Console", label: "handmade simple game engine" },
         ],
-        technologies: ["PowerShell", "Active Directory", "HTML", "Automation"],
+        technologies: ["C++", "Console", "Game logic"],
+        githubUrl: "https://github.com/polarpicado/FroggerProyectoCPlusPlus",
       },
     ],
   },
