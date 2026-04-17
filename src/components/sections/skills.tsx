@@ -1,37 +1,73 @@
+"use client";
+
+import {
+  Bot,
+  Boxes,
+  DatabaseZap,
+  Headset,
+  Network,
+  Workflow,
+} from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { skills } from "@/lib/data";
 import { useLanguage } from "@/context/language-context";
+
+const iconMap = {
+  automation: Workflow,
+  support: Headset,
+  data: DatabaseZap,
+  ai: Bot,
+  infrastructure: Network,
+  systems: Boxes,
+};
 
 export default function SkillsSection() {
   const { dictionary } = useLanguage();
 
   return (
-    <section id="skills" className="w-full py-12 md:py-24 lg:py-32 bg-muted/40">
+    <section id="skills" className="w-full bg-muted/40 py-16 md:py-20 lg:py-24">
       <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-              {dictionary.skills.title}
-            </h2>
-            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              {dictionary.skills.description}
-            </p>
-          </div>
+        <div className="mx-auto max-w-3xl space-y-4 text-center">
+          <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">
+            {dictionary.skills.title}
+          </h2>
+          <p className="text-base leading-8 text-muted-foreground md:text-lg">
+            {dictionary.skills.description}
+          </p>
         </div>
-        <div className="mx-auto grid max-w-5xl grid-cols-2 gap-6 py-12 md:grid-cols-3 lg:gap-12">
-          {dictionary.skills.skillList.map((skill) => {
-            const skillData = skills.find(s => s.id === skill.id);
+        <div className="mx-auto mt-12 grid max-w-6xl gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {dictionary.skills.categories.map((category) => {
+            const Icon = iconMap[category.icon as keyof typeof iconMap] ?? Boxes;
+
             return (
-              <div key={skill.name} className="flex flex-col items-center gap-2 text-center">
-                <div className="bg-primary/10 text-primary p-4 rounded-full">
-                  {skillData && <skillData.icon className="h-8 w-8" />}
-                </div>
-                <div className="space-y-1">
-                  <h3 className="font-bold">{skill.name}</h3>
-                  <p className="text-sm text-muted-foreground">{skill.description}</p>
-                </div>
-              </div>
-            )
+              <Card
+                key={category.title}
+                className="rounded-[1.75rem] border-border/70 bg-card/85 shadow-sm"
+              >
+                <CardHeader className="space-y-4">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+                    <Icon className="h-6 w-6" />
+                  </div>
+                  <div className="space-y-2">
+                    <CardTitle className="text-xl">{category.title}</CardTitle>
+                    <p className="text-sm leading-6 text-muted-foreground">
+                      {category.description}
+                    </p>
+                  </div>
+                </CardHeader>
+                <CardContent className="flex flex-wrap gap-2">
+                  {category.items.map((item) => (
+                    <Badge
+                      key={item}
+                      variant="secondary"
+                      className="rounded-full px-3 py-1 text-xs"
+                    >
+                      {item}
+                    </Badge>
+                  ))}
+                </CardContent>
+              </Card>
+            );
           })}
         </div>
       </div>
