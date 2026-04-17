@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Bot, Loader2, Send, Sparkles } from "lucide-react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -156,7 +158,15 @@ export default function AIAssistant() {
                       : "bg-muted"
                   )}
                 >
-                  <p>{message.content}</p>
+                  {message.role === "assistant" ? (
+                    <div className="leading-relaxed [&_a]:underline [&_code]:rounded [&_code]:bg-background/60 [&_code]:px-1 [&_li]:ml-4 [&_ol]:list-decimal [&_ol]:space-y-1 [&_p]:mb-2 [&_p:last-child]:mb-0 [&_ul]:list-disc [&_ul]:space-y-1">
+                      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                        {message.content}
+                      </ReactMarkdown>
+                    </div>
+                  ) : (
+                    <p>{message.content}</p>
+                  )}
                 </div>
               </div>
             ))}

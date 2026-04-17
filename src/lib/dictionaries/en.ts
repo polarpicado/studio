@@ -286,7 +286,7 @@ export const dictionary = {
     sendMessage: "Send message",
     whatsappLabel: "Message me on WhatsApp",
     whatsappUrl:
-      "https://wa.me/?text=Hello%20Joao%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk%20about%20an%20opportunity.",
+      "https://wa.me/51970645611?text=Hello%20Joao%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20talk%20about%20an%20opportunity.",
     sending: "Sending...",
     successTitle: "Message sent",
     successDescription: "Thanks. Your message was sent successfully.",

@@ -13,12 +13,33 @@ function extractChatAnswer(payload: unknown): string | null {
     return null;
   }
 
-  const candidateKeys = ["answer", "message", "output", "response"];
+  const record = payload as Record<string, unknown>;
+  const candidateKeys = [
+    "answer",
+    "message",
+    "output",
+    "response",
+    "reply",
+    "respuesta",
+    "text",
+    "content",
+  ];
 
   for (const key of candidateKeys) {
-    const value = (payload as Record<string, unknown>)[key];
+    const value = record[key];
     if (typeof value === "string" && value.trim()) {
       return value;
+    }
+  }
+
+  const raw = record.raw;
+  if (raw && typeof raw === "object") {
+    const nested = raw as Record<string, unknown>;
+    for (const key of candidateKeys) {
+      const value = nested[key];
+      if (typeof value === "string" && value.trim()) {
+        return value;
+      }
     }
   }
 

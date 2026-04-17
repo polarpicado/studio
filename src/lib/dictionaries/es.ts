@@ -287,7 +287,7 @@
     sendMessage: "Enviar mensaje",
     whatsappLabel: "Escribeme por WhatsApp",
     whatsappUrl:
-      "https://wa.me/?text=Hola%20Joao%2C%20vi%20tu%20portafolio%20y%20quiero%20conversar%20sobre%20una%20oportunidad.",
+      "https://wa.me/51970645611?text=Hola%20Joao%2C%20vi%20tu%20portafolio%20y%20quiero%20conversar%20sobre%20una%20oportunidad.",
     sending: "Enviando...",
     successTitle: "Mensaje enviado",
     successDescription: "Gracias. El mensaje fue enviado correctamente.",
