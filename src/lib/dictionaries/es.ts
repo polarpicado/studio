@@ -1,204 +1,319 @@
-export const dictionary = {
+﻿export const dictionary = {
   header: {
     nav: [
-      { href: "#about", label: "Sobre mí" },
-      { href: "#experience", label: "Experiencia" },
-      { href: "#skills", label: "Habilidades" },
+      { href: "#about", label: "Perfil" },
       { href: "#projects", label: "Proyectos" },
+      { href: "#skills", label: "Habilidades" },
       { href: "#certifications", label: "Certificaciones" },
       { href: "#contact", label: "Contacto" },
     ],
   },
-  about: {
-    jobTitle: "Ingeniero de Sistemas Computacionales",
-    professionalSummary:
-      `<p>Soy un Ingeniero de Sistemas y Experto en Automatización orientado a resultados, con una pasión por construir <strong>soluciones en la nube eficientes, escalables y robustas</strong>.</p>
-       <p>Mi experiencia radica en el uso de <strong>Python, n8n y diversas tecnologías en la nube</strong> para optimizar procesos, automatizar flujos de trabajo complejos y mejorar el rendimiento del sistema.</p>
-       <p>Me encanta resolver problemas complejos y estoy dedicado al aprendizaje y la mejora continuos en el mundo de la tecnología en constante evolución.</p>`,
-    contactMe: "Contáctame",
-    downloadCV: "Currículo",
-    english: "Inglés",
-    spanish: "Español",
+  hero: {
+    title: "Automatizo procesos con IA y sistemas integrados",
+    subtitle:
+      "Desarrollo soluciones que conectan chat, datos, tickets y automatizacion para reducir trabajo manual y escalar operaciones.",
+    viewDemo: "Ver demo",
+    viewProjects: "Ver proyectos",
+    contact: "Contactar",
   },
-  skills: {
-    title: "Habilidades Clave",
-    description: "Un resumen de las tecnologías y metodologías que domino.",
-    skillList: [
-      { id: "python", name: "Python", description: "Django, Scripting" },
-      { id: "n8n", name: "n8n", description: "Flujos de Automatización" },
-      { id: "cloud", name: "Cloud & DevOps", description: "AWS, Azure, Git" },
-      { id: "databases", name: "Bases de Datos", description: "MySQL, SQL Server, PostgreSQL" },
-      { id: "containerization", name: "ITSM & Soporte", description: "ITIL, Soporte Técnico" },
-      { id: "cicd", name: "Gestión", description: "Metodologías Ágiles, Scrum" },
+  about: {
+    eyebrow: "Soporte, operaciones y automatizacion",
+    jobTitle: "Especialista en Automatizacion TI",
+    experienceBadge: "+3 anos de experiencia en soporte y automatizacion en entornos corporativos",
+    subheadline:
+      "Optimizo soporte y operaciones con automatizacion de tareas, manejo de datos operativos y mejora de procesos.",
+    professionalSummary:
+      "Automatizo procesos dentro de soporte y operaciones TI para reducir trabajo manual, acelerar tiempos de respuesta y ordenar flujos internos. Trabajo principalmente con Python, PowerShell, VBA, n8n, Excel, CSV/XLSX, Active Directory y flujos ETL ligeros segun la necesidad operativa.",
+    contactMe: "Conversemos",
+    downloadCV: "Descargar CV",
+    cvUrl:
+      "https://drive.google.com/file/d/1ZvBOkCCZSejsDhNCPDzIzKoOtcli2ESX/view?usp=drive_link",
+    focusAreas: [
+      "Automatizacion de soporte",
+      "ETL y archivos operativos",
+      "Procesos internos con Active Directory",
+      "IA aplicada a operaciones",
     ],
   },
-  experience: {
-    title: "Experiencia Laboral",
-    description: "Mi trayectoria profesional y roles clave.",
-    experienceList: [
+  featured: {
+    title: "Plataforma de soporte con IA",
+    description:
+      "Demo funcional compuesta por chat, gestion de tickets y repositorio documental conectados a una API y automatizaciones en ejecucion.",
+    links: [
       {
-        role: "Analista de operaciones de TI",
-        company: "Camposol",
-        period: "ago. 2023 - jun. 2025",
-        description:
-          "Aptitudes: Computación en la nube, Microsoft Excel, Soporte técnico, Python, Aranda, Active Directory, Microsoft Azure.",
-        logo_light: "https://i.postimg.cc/1zz7QfwL/camposol-black.png",
-        logo_dark: "https://i.postimg.cc/k55YmBK0/camposol-white.png",
+        title: "Chat",
+        description: "Interaccion con agente de IA que responde y automatiza flujos",
+        href: "https://caritive-corrosively-natalia.ngrok-free.dev/chat/",
       },
       {
-        role: "Practicante de Soporte e Incidencias",
-        company: "ALIGNET",
-        period: "sept. 2022 - ago. 2023",
-        description:
-          "Aptitudes: Python, Computación en la nube, Soporte técnico, Metodologías ágiles, Control de versiones, Amazon Web Services (AWS).",
-        logo_light: "https://i.postimg.cc/NjDCS19P/alignet-black.png",
-        logo_dark: "https://i.postimg.cc/rppZkK5L/alignet-white.png",
+        title: "ServiceDesk",
+        description: "Gestion de tickets y operaciones de soporte en tiempo real",
+        href: "https://caritive-corrosively-natalia.ngrok-free.dev/servicedesk/",
       },
       {
-        role: "Líder del equipo de sistemas",
-        company: "Agencia Consigue Ventas Online",
-        period: "abr. 2022 - jun. 2022",
+        title: "Repository",
         description:
-          "Aptitudes: Microsoft Excel, Desarrollo web, Metodologías ágiles, Liderazgo, Trabajo en equipo, Dirección y desarrollo de equipos de trabajo.",
-        logo_light: "https://i.postimg.cc/cJJkSrwP/consigueventasonline-black.png",
-        logo_dark: "https://i.postimg.cc/bvvVhs1y/consigueventasonline-white.png",
+          "Repositorio documental que alimenta el conocimiento del sistema",
+        href: "https://caritive-corrosively-natalia.ngrok-free.dev/repository/",
+      },
+    ],
+  },
+  metrics: {
+    items: [
+      {
+        label: "Tiempo ahorrado",
+        value: "6h -> 30 min",
+        description: "Automatizacion de reportes operativos y consolidacion de datos.",
       },
       {
-        role: "Desarrollador Backend Laravel",
-        company: "Agencia Consigue Ventas Online",
-        period: "mar. 2022 - abr. 2022",
-        description:
-          "Aptitudes: Desarrollo web, Metodologías ágiles, Control de versiones, Microsoft SQL Server.",
-        logo_light: "https://i.postimg.cc/cJJkSrwP/consigueventasonline-black.png",
-        logo_dark: "https://i.postimg.cc/bvvVhs1y/consigueventasonline-white.png",
+        label: "Reduccion manual",
+        value: "-75%",
+        description: "Procesos ETL y tareas repetitivas integradas con SAP y hojas de control.",
       },
       {
-        role: "Desarrollador de software",
-        company: "Grupo Casza",
-        period: "mar. 2021 - oct. 2021",
+        label: "Provision interna",
+        value: "3h -> 10 s",
         description:
-          "Aptitudes: Linux, Computación en la nube, Desarrollo web, Metodologías ágiles, Microsoft SQL Server, Programación lógica, Python, Django, MySQL, SQL, JavaScript, Amazon Web Services (AWS).",
-        logo_light: "https://i.postimg.cc/cJ5940cS/grupocasza-black.png",
-        logo_dark: "https://i.postimg.cc/QMn4xhqD/grupocasza-white.png",
+          "Generacion automatica de firmas corporativas a partir de Active Directory.",
+      },
+      {
+        label: "Eficiencia",
+        value: "-83.3%",
+        description:
+          "Ejecuciones repetitivas reducidas con scripts Python y automatizacion programada.",
+      },
+    ],
+  },
+  skills: {
+    title: "Habilidades clave",
+    description:
+      "Capacidades organizadas segun el tipo de problema que resuelvo en entornos de operaciones y soporte.",
+    categories: [
+      {
+        icon: "automation",
+        title: "Automatizacion y scripting",
+        description:
+          "Scripts y workflows para reemplazar tareas repetitivas y estandarizar procesos internos.",
+        items: ["Python", "PowerShell", "VBA", "n8n", "Excel", "CSV/XLSX"],
+      },
+      {
+        icon: "support",
+        title: "Soporte TI",
+        description:
+          "Atencion operativa, soporte al usuario y resolucion de incidencias con enfoque en mejora continua.",
+        items: ["Mesa de ayuda", "ITSM", "Aranda", "Active Directory", "Microsoft 365", "Soporte remoto"],
+      },
+      {
+        icon: "data",
+        title: "Datos y ETL",
+        description:
+          "Extraccion, limpieza y transformacion de datos para archivos operativos, reportes y seguimiento.",
+        items: ["ETL", "SAP", "PowerShell", "VBA", "CSV/XLSX", "Consolidacion de datos"],
+      },
+      {
+        icon: "ai",
+        title: "IA aplicada",
+        description:
+          "Uso de asistentes y automatizaciones con IA para soporte N1, consultas internas y productividad.",
+        items: ["Gemini", "RAG", "Prompting", "Chatbots", "n8n AI"],
+      },
+      {
+        icon: "infrastructure",
+        title: "Infraestructura",
+        description:
+          "Base tecnica para operar usuarios, archivos y servicios de apoyo en entornos corporativos.",
+        items: ["Windows", "Linux", "Azure", "Git", "Microsoft 365"],
       },
     ],
   },
   projects: {
-    title: "Proyectos",
+    title: "Proyectos clave",
     description:
-      "Estos son algunos de los proyectos en los que estoy orgulloso de haber trabajado.",
+      "Casos alineados con soporte, operaciones y automatizacion con impacto medible.",
+    problemLabel: "Problema",
+    solutionLabel: "Solucion",
+    resultLabel: "Resultado",
     projectList: [
       {
-        id: "itsm-dashboard",
-        title: "ITSM-Dashboard",
-        description: "Dashboard de IT Service Management con SQL, Python y Power BI.",
-        technologies: ["Python", "SQL", "Power BI", "HTML/CSS/JS", "Firebase"],
+        id: "chatbot-rag",
+        tag: "Soporte N1 + IA",
+        title: "Chatbot N1 con IA + RAG",
+        summary:
+          "Asistente para resolver consultas frecuentes y apoyar la atencion inicial de soporte.",
+        problem:
+          "El equipo recibia consultas repetitivas y la informacion estaba dispersa en documentos y bases internas.",
+        solution:
+          "Centralice respuestas con n8n, Gemini y RAG para consultar una base de conocimiento y responder al instante.",
+        result:
+          "Reduje la atencion manual de consultas repetitivas y acelere el soporte de primer nivel.",
+        metrics: [
+          { value: "-75%", label: "menos consultas manuales repetitivas" },
+          { value: "24/7", label: "atencion automatizada inicial" },
+        ],
+        technologies: ["n8n", "Gemini AI", "RAG", "Google Sheets"],
+        githubUrl: "https://github.com/polarpicado/PortfolioChat-n8n",
+        youtubeUrl: "https://www.youtube.com/watch?v=9ORxHFfZh_8",
+      },
+      {
+        id: "sap-etl",
+        tag: "Datos + SAP",
+        title: "Automatizacion ETL para SAP",
+        summary:
+          "Flujo ETL para extraer, transformar y consolidar informacion operativa desde SAP hacia reportes de uso diario.",
+        problem:
+          "La consolidacion de datos desde SAP demandaba trabajo manual, validaciones repetitivas y tiempos altos de cierre.",
+        solution:
+          "Reduje pasos manuales con un flujo ETL apoyado en PowerShell, VBA y archivos CSV/XLSX para limpiar, homologar y consolidar datos operativos.",
+        result:
+          "Reduje la carga manual y deje un proceso mas estable y trazable para el equipo.",
+        metrics: [
+          { value: "-75%", label: "reduccion del trabajo manual" },
+          { value: "ETL", label: "flujo estable para consolidacion operativa" },
+        ],
+        technologies: ["PowerShell", "VBA", "SAP", "ETL", "CSV/XLSX"],
+      },
+      {
+        id: "report-automation",
+        tag: "Reporting",
+        title: "Automatizacion de reportes operativos",
+        summary:
+          "Generacion automatica de reportes para seguimiento de indicadores y gestion diaria.",
+        problem:
+          "La construccion de reportes tomaba horas entre copias manuales, limpieza y armado de archivos.",
+        solution:
+          "Reduje trabajo manual con scripts y plantillas para generar reportes listos para revision.",
+        result:
+          "Reduje el tiempo de elaboracion de reportes y mejore su frecuencia de actualizacion.",
+        metrics: [
+          { value: "6h -> 30 min", label: "tiempo de generacion" },
+          { value: "diario", label: "ritmo de actualizacion mas consistente" },
+        ],
+        technologies: ["Python", "Excel", "VBA", "CSV/XLSX"],
         githubUrl: "https://github.com/polarpicado/ITSM-Dashboard",
       },
       {
-        id: "crocdata-app",
-        title: "CrocData-App",
-        description:
-          "Aplicación en AppSheet para gestionar y visualizar observaciones de cocodrilos a partir de datos abiertos del gobierno de Perú.",
-        technologies: ["AppSheet", "Google Sheets"],
-        githubUrl: "https://github.com/polarpicado/CrocData-App",
-      },
-      {
-        id: "portfoliochat-n8n",
-        title: "PortfolioChat-n8n",
-        description:
-          "Chatbot creado con n8n, Gemini AI y Google Sheets. Embebido en una web personal como asistente virtual.",
-        technologies: ["n8n", "Gemini AI", "Google Sheets"],
-        githubUrl: "https://github.com/polarpicado/PortfolioChat-n8n",
-        youtubeUrl: "https://www.youtube.com/watch?v=9ORxHFfZh_8"
-      },
-      {
-        id: "n8n-formsaver",
-        title: "n8n-FormSaver",
-        description:
-          "Workflow en n8n para guardar datos de formularios web en Google Sheets sin usar bases de datos.",
-        technologies: ["WebHooks", "Google Sheets"],
-        githubUrl: "https://github.com/polarpicado/n8n-FormSaver",
-      },
-      {
-        id: "frogger-cpp",
-        title: "FroggerProyectoCPlusPlus",
-        description: "Recreación del clásico juego Frogger utilizando C++ puro, sin bibliotecas externas, para demostrar un profundo conocimiento de los fundamentos de la programación y la lógica de juegos. Desarrollado en el IDE Zinjal.",
-        technologies: ["C++"],
-        githubUrl: "https://github.com/polarpicado/FroggerProyectoCPlusPlus",
+        id: "signature-generator",
+        tag: "Soporte interno",
+        title: "Generador de firmas con Active Directory",
+        summary:
+          "Automatizacion para crear firmas corporativas usando datos centralizados de usuarios.",
+        problem:
+          "La configuracion de firmas tomaba demasiado tiempo y se hacia manualmente por cada usuario.",
+        solution:
+          "Automatice la generacion de firmas usando datos de Active Directory y una plantilla unica.",
+        result:
+          "Reduje el tiempo de provision y elimine errores frecuentes de copiado manual.",
+        metrics: [
+          { value: "3h -> 10 s", label: "tiempo de configuracion por usuario" },
+          { value: "0 retrabajo", label: "por errores de copiado manual" },
+        ],
+        technologies: ["PowerShell", "Active Directory", "HTML", "Automatizacion"],
       },
     ],
   },
   certifications: {
-    title: "Certificaciones y Logros",
+    title: "Certificaciones relevantes",
     description:
-      "Mi compromiso con el aprendizaje continuo y el desarrollo profesional.",
+      "Formacion continua alineada con datos, cloud, ciberseguridad y soporte TI.",
+    showMore: "Ver mas",
+    showLess: "Ver menos",
     certificationList: [
-      { name: 'CIENCIA DE DATOS 1: EXPLORATORY DATA ANALYSIS', issuer: 'Universidad Nacional de Ingeniería', year: 'ago. 2025', url: 'https://certificados.uni.edu.pe/verificador/search.php?cert_id=cert_263e2acd67e0e3d62edb290d09359470' },
-      { name: 'Fundamentos de ITIL', issuer: 'Universidad Nacional de Ingeniería', year: 'ago. 2025', url: 'https://drive.google.com/file/d/17cJ91QFo3T3NHP-N8Ny8tdbtO7MsSThn/view' },
-      { name: 'MySQL', issuer: 'Skill - Centro de capacitación', year: 'ago. 2025', url: 'https://drive.google.com/file/d/17x_3Nn4dw4xCxpYiG26K7y71mRUDFQrf/view' },
-      { name: 'PostgreSQL', issuer: 'Skill - Centro de capacitación', year: 'ago. 2025', url: 'https://drive.google.com/file/d/1uGspnxkyBrAN1O_pHOXcJcGdNf31nznv/view' },
-      { name: 'SQL Server', issuer: 'Skill - Centro de capacitación', year: 'ago. 2025', url: 'https://drive.google.com/file/d/1AbKVf9DrLJS3YfmqJfKhfLoDqHm0H9xy/view' },
-      { name: 'Excel Avanzado', issuer: 'Fundación Telefónica', year: 'jun. 2025', url: 'https://drive.google.com/file/d/1uS28hVzxefg2b9iswqMvE_4ATYtQbWsd/view' },
-      { name: 'Introducción a Power BI', issuer: 'Fundación Telefónica', year: 'jun. 2025', url: 'https://drive.google.com/file/d/1le3tyCCaVHuM2MKy8kCEmeWlxsseIz5m/view' },
-      { name: 'Principios Básicos de Big Data', issuer: 'Fundación Telefónica', year: 'jun. 2025', url: 'https://drive.google.com/file/d/1vAOo6z5p6UlYeEpLRRd_zBJU3OmyOqVV/view' },
-      { name: 'Programación con Java Standard', issuer: 'Fundación Telefónica', year: 'jun. 2025', url: 'https://drive.google.com/file/d/1vvIwSY3wWb4Vp-wopdKEFjSM7xoDKvPp/view' },
-      { name: 'CIBERSEGURIDAD: CYBERSOC', issuer: 'Universidad Nacional de Ingeniería', year: 'feb. 2025', url: 'https://certificados.uni.edu.pe/verificador/search.php?cert_id=cert_ef22d4272cdc3b1a70acae3e7735565d' },
-      { name: 'CIBERSEGURIDAD: ETHICAL HACKING', issuer: 'Universidad Nacional de Ingeniería', year: 'feb. 2025', url: 'https://certificados.uni.edu.pe/verificador/search.php?cert_id=cert_de5b725afef7fd4ac36e5d6c0bb1e9d4' },
-      { name: 'CIBERSEGURIDAD: PENTESTING CONTRA APLICACIONES WEB', issuer: 'Universidad Nacional de Ingeniería', year: 'feb. 2025', url: 'https://certificados.uni.edu.pe/verificador/search.php?cert_id=cert_6872212f002c6f45e6fd121517c8b6bd' },
-      { name: 'CLOUD COMPUTING: AWS - AZURE - GOOGLE CLOUD', issuer: 'Universidad Nacional de Ingeniería', year: 'feb. 2025', url: 'https://certificados.uni.edu.pe/verificador/search.php?cert_id=cert_d27ff302798bfde709cac757dee47b82' },
-      { name: 'Python(Basic)', issuer: 'HackerRank', year: 'nov. 2022', url: 'https://www.hackerrank.com/certificates/a634a0c646cd' },
-      { name: 'Scrum Fundamentals Certified', issuer: 'Vabro.ai and VMEdu.com', year: 'nov. 2022', url: 'https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-JoaoBasanta-950646.pdf' },
-      { name: 'AWS Cloud Practitioner Essentials Day', issuer: 'AWS Training Online', year: 'oct. 2022', url: 'https://drive.google.com/file/d/1QvDN5tJirVaD1rhM5ARumkjd_vbKqFBX/view' },
-      { name: 'Desarrollo de Apps Móviles', issuer: 'Google Actívate', year: 'oct. 2022', url: 'https://drive.google.com/file/d/1yz4P9AaKb_qBqY5znhkk9gPDjlYrDCE0/view' },
-      { name: 'Creación de WebService API REST con Laravel', issuer: 'Udemy', year: 'mar. 2022', url: 'https://www.udemy.com/certificate/UC-2812b7fc-d9c1-42d8-8dd2-8c9a45537d73/' },
-      { name: 'C# esencial', issuer: 'LinkedIn', year: 'feb. 2022', url: 'https://drive.google.com/file/d/1K1wfk3-wjV_v5RkwHGM03UZBPhRtw_lO/view' },
-      { name: 'SQL Server For Analytics', issuer: 'WE Educación Ejecutiva', year: 'feb. 2022', url: 'https://drive.google.com/file/d/17oJTITj4dI9OVa4Mltl8jY72e8EINWI5/view' },
-      { name: 'Worpress Básico', issuer: 'Fundación Telefónica', year: 'feb. 2022', url: 'https://www.linkedin.com/company/10331361/' },
-      { name: 'Fundamentos de big data', issuer: 'LinkedIn', year: 'ene. 2022', url: 'https://drive.google.com/file/d/1y79hbL95OU389zXnBfc3bcr112vjGdIp/view?usp=sharing' },
-      { name: 'Fundamentos de la atención al cliente para profesionales IT', issuer: 'LinkedIn', year: 'ene. 2022', url: 'https://drive.google.com/file/d/1m0gvsLF8E36G1k4Baj_szOH-nWrl0CDg/view' },
-      { name: 'Fundamentos de la programación: Diseño orientado a objetos', issuer: 'LinkedIn', year: 'ene. 2022', url: 'https://drive.google.com/file/d/181FMlP08vQuKRBhigeY_wm-MhtyQkd6P/view' },
-      { name: 'Fundamentos de las matemáticas para programación', issuer: 'LinkedIn', year: 'ene. 2022', url: 'https://drive.google.com/file/d/1Ke3us8uIUiDef7y9MnwNPh-eiyGy-Jj1/view' },
-      { name: 'Pensamiento computacional', issuer: 'LinkedIn', year: 'ene. 2022', url: 'https://drive.google.com/file/d/1CFeuBh-2wR9u5NJU2X1OVeU57CIRqDnH/view' },
-      { name: 'Git y Github Práctico', issuer: 'Udemy', year: 'dic. 2021', url: 'https://www.udemy.com/certificate/UC-b7bf336d-db00-4adc-bca8-2a0574add0f7/' },
-      { name: 'Office Intermedio', issuer: 'Fundación Telefónica', year: 'dic. 2021', url: 'https://drive.google.com/file/d/1raf9DjwzjidK5vJDfUX269G0tqfFJ7Fo/view' },
-      { name: 'Introducción a Azure', issuer: 'Udemy', year: 'nov. 2021', url: 'https://www.udemy.com/certificate/UC-b6dd2676-e711-485a-81a4-fb627e234ecc/' },
-      { name: 'Introducción al Desarrollo Web I', issuer: 'Google Actívate', year: 'ago. 2021', url: 'https://drive.google.com/file/d/1lYLwwpDHuvrkJYcPmq6cKVmw9A1oQCg-/view' },
-      { name: 'Networking Essentials', issuer: 'Cisco Networking Academy', year: 'ago. 2021', url: 'https://drive.google.com/file/d/1ixiHYya6hjOoXvSnhLfJZ45BZI1WBwku/view' },
-      { name: 'CCNAv7: Switching, Routing and Wireless Essentials', issuer: 'Cisco Networking Academy', year: 'jul. 2021', url: 'https://drive.google.com/drive/folders/12LkLpynB88eJFRsdCnwIBcFi0Q-ba5ac?usp=sharing' },
-      { name: 'Gestión de Proyectos con Metodologías Ágiles y Enfoques Lean', issuer: 'Fundación Telefónica', year: 'abr. 2021', url: 'https://drive.google.com/file/d/1yfwp0uNPBuVEFRpys6H7Tu19fudznEud/view' },
-      { name: 'Introduction to Cibersecurity', issuer: 'Cisco Networking Academy', year: 'abr. 2021', url: 'https://drive.google.com/file/d/1v7DsVr_ToLsDu0Zna0HVro0tJCHD_BCc/view' },
-      { name: 'Get Connected', issuer: 'Cisco Networking Academy', year: 'mar. 2021', url: 'https://drive.google.com/file/d/1lJfCtP5RWEwJHTvZTZYnyxDO4NEBcJWo/view' },
-      { name: 'La ciencia de datos: Poder en los números', issuer: 'Laureate Education, Inc.', year: 'mar. 2021', url: 'https://drive.google.com/file/d/1L2JUk4QWEKkBrqGLXPHhT_M5mrvG_CKy/view' },
-      { name: 'NDG Linux Unhatched', issuer: 'Cisco Networking Academy', year: 'feb. 2021', url: 'https://drive.google.com/file/d/1QqwFsvCWxBGQYuUgCoMIMB5gpSDBscv2/view' },
+      {
+        name: "Data Science 1: Exploratory Data Analysis",
+        issuer: "Universidad Nacional de Ingenieria",
+        year: "ago. 2025",
+        url: "https://certificados.uni.edu.pe/verificador/search.php?cert_id=cert_263e2acd67e0e3d62edb290d09359470",
+      },
+      {
+        name: "Fundamentos de ITIL",
+        issuer: "Universidad Nacional de Ingenieria",
+        year: "ago. 2025",
+        url: "https://drive.google.com/file/d/17cJ91QFo3T3NHP-N8Ny8tdbtO7MsSThn/view",
+      },
+      {
+        name: "Cloud Computing: AWS - Azure - Google Cloud",
+        issuer: "Universidad Nacional de Ingenieria",
+        year: "feb. 2025",
+        url: "https://certificados.uni.edu.pe/verificador/search.php?cert_id=cert_d27ff302798bfde709cac757dee47b82",
+      },
+      {
+        name: "Power BI",
+        issuer: "Fundacion Telefonica",
+        year: "jun. 2025",
+        url: "https://drive.google.com/file/d/1le3tyCCaVHuM2MKy8kCEmeWlxsseIz5m/view",
+      },
+      {
+        name: "Excel Avanzado",
+        issuer: "Fundacion Telefonica",
+        year: "jun. 2025",
+        url: "https://drive.google.com/file/d/1uS28hVzxefg2b9iswqMvE_4ATYtQbWsd/view",
+      },
+      {
+        name: "Python (Basic)",
+        issuer: "HackerRank",
+        year: "nov. 2022",
+        url: "https://www.hackerrank.com/certificates/a634a0c646cd",
+      },
+      {
+        name: "Scrum Fundamentals Certified",
+        issuer: "Vabro.ai and VMEdu.com",
+        year: "nov. 2022",
+        url: "https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-JoaoBasanta-950646.pdf",
+      },
+      {
+        name: "AWS Cloud Practitioner Essentials Day",
+        issuer: "AWS Training Online",
+        year: "oct. 2022",
+        url: "https://drive.google.com/file/d/1QvDN5tJirVaD1rhM5ARumkjd_vbKqFBX/view",
+      },
+      {
+        name: "Networking Essentials",
+        issuer: "Cisco Networking Academy",
+        year: "ago. 2021",
+        url: "https://drive.google.com/file/d/1ixiHYya6hjOoXvSnhLfJZ45BZI1WBwku/view",
+      },
     ],
   },
   contact: {
-    title: "Ponte en Contacto",
+    title: "Contacto",
     description:
-      "¿Tienes alguna pregunta o quieres que trabajemos juntos? Envíame un mensaje.",
+      "Si buscas a alguien que automatice procesos dentro de soporte y operaciones TI, conversemos.",
     nameLabel: "Nombre",
-    namePlaceholder: "Tu Nombre",
-    emailLabel: "Correo Electrónico",
+    namePlaceholder: "Tu nombre",
+    emailLabel: "Correo",
     emailPlaceholder: "tu@email.com",
     messageLabel: "Mensaje",
-    messagePlaceholder: "Tu mensaje...",
-    sendMessage: "Enviar Mensaje",
+    messagePlaceholder: "Cuentame sobre la oportunidad o necesidad del equipo...",
+    sendMessage: "Enviar mensaje",
+    whatsappLabel: "Escribeme por WhatsApp",
+    whatsappUrl:
+      "https://wa.me/?text=Hola%20Joao%2C%20vi%20tu%20portafolio%20y%20quiero%20conversar%20sobre%20una%20oportunidad.",
     sending: "Enviando...",
+    successTitle: "Mensaje enviado",
+    successDescription: "Gracias. El mensaje fue enviado correctamente.",
+    errorTitle: "No se pudo enviar",
+    errorDescription: "Hubo un problema al enviar el mensaje.",
+    validation: {
+      name: "El nombre es muy corto.",
+      email: "Ingresa un correo valido.",
+      message: "El mensaje debe tener al menos 10 caracteres.",
+    },
   },
   aiAssistant: {
-    open: "Abrir Asistente de IA",
-    title: "Asistente de Portafolio de IA",
-    description: "Hazme preguntas sobre el trabajo de Joao Basanta.",
+    open: "Abrir asistente",
+    title: "Asistente del portafolio",
+    description:
+      "Haz preguntas sobre automatizacion en soporte y operaciones TI, proyectos o experiencia.",
     initialMessage:
-      "¡Hola! Soy el asistente de IA de Joao. Pregúntame cualquier cosa sobre sus habilidades, experiencia o proyectos.",
+      "Estoy listo para resumir experiencia, proyectos y logros de Joao desde un enfoque de automatizacion en soporte y operaciones TI.",
     errorMessage:
-      "Lo siento, encontré un error. Por favor, inténtalo de nuevo.",
-    placeholder: "Pregunta sobre un proyecto...",
+      "No pude responder en este momento. Intenta nuevamente en unos segundos.",
+    placeholder: "Pregunta por un proyecto o resultado...",
     send: "Enviar",
+  },
+  footer: {
+    rights: "Todos los derechos reservados.",
+    tagline: "Portafolio orientado a reclutadores y lideres de operaciones TI.",
   },
 };
 
-    
-
-    
