@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, ReactNode } from "react";
+import { createContext, useContext, useEffect, useState, ReactNode } from "react";
 import { dictionary as enDictionary } from "@/lib/dictionaries/en";
 import { dictionary as esDictionary } from "@/lib/dictionaries/es";
 
@@ -21,6 +21,10 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   const [language, setLanguage] = useState<Language>("es");
 
   const dictionary = language === "en" ? enDictionary : esDictionary;
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage, dictionary }}>

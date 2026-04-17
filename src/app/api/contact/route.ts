@@ -18,34 +18,35 @@ export async function POST(request: Request) {
       );
     }
 
-    const endpoint = process.env.CONTACT_WEBHOOK_URL;
+    const upstreamResponse = await fetch(
+      "https://caritive-corrosively-natalia.ngrok-free.dev/api/portfolio/formulario-web",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "ngrok-skip-browser-warning": "true",
+        },
+        body: JSON.stringify({
+          nombre: name,
+          correo: email,
+          mensaje: message,
+        }),
+      }
+    );
 
-    if (!endpoint) {
+    if (!upstreamResponse.ok) {
+      const payload = (await upstreamResponse.json().catch(() => null)) as
+        | Record<string, unknown>
+        | null;
+
       return NextResponse.json(
         {
           error:
-            "Contact service is not configured yet. Set CONTACT_WEBHOOK_URL on the server.",
+            (payload?.detail as string | undefined) ||
+            (payload?.error as string | undefined) ||
+            "The contact service rejected the request.",
         },
-        { status: 503 }
-      );
-    }
-
-    const upstreamResponse = await fetch(endpoint, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        nombre: name,
-        correo: email,
-        mensaje: message,
-      }),
-    });
-
-    if (!upstreamResponse.ok) {
-      return NextResponse.json(
-        { error: "The contact service rejected the request." },
-        { status: 502 }
+        { status: upstreamResponse.status }
       );
     }
 

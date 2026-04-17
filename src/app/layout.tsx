@@ -5,14 +5,13 @@ import { Toaster } from "@/components/ui/toaster";
 import { cn } from "@/lib/utils";
 import { LanguageProvider } from "@/context/language-context";
 import { ThemeProvider } from "@/components/theme-provider";
-import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "Joao Basanta | Portafolio Web",
+  title: "Joao Basanta | Especialista en Automatizacion TI",
   description:
-    "Explore the portfolio of Joao Basanta, a skilled system engineer specializing in Python, n8n, and cloud automation solutions. Discover projects, skills, and professional experience.",
+    "Portafolio de Joao Basanta, especialista en automatizacion TI, soporte, datos e integracion de procesos con Python, PowerShell, VBA, n8n y SAP.",
 };
 
 export default function RootLayout({
@@ -21,13 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <link
-          href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css"
-          rel="stylesheet"
-        />
-      </head>
+    <html lang="es" suppressHydrationWarning>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
@@ -36,7 +29,7 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="light"
           disableTransitionOnChange
         >
           <LanguageProvider>
@@ -44,16 +37,6 @@ export default function RootLayout({
             <Toaster />
           </LanguageProvider>
         </ThemeProvider>
-        <Script id="n8n-chat-widget" strategy="lazyOnload">
-          {`
-            (async () => {
-              const { createChat } = await import('https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js');
-              createChat({
-                webhookUrl: 'https://caritive-corrosively-natalia.ngrok-free.dev/webhook/102f23af-804b-43a9-a0b4-a99329d7ae48/chat'
-              });
-            })();
-          `}
-        </Script>
       </body>
     </html>
   );

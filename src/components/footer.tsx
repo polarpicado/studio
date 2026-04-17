@@ -1,12 +1,20 @@
+"use client";
+
 import React from "react";
+import { useLanguage } from "@/context/language-context";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const { dictionary } = useLanguage();
+
   return (
-    <footer className="py-6 md:px-8 md:py-0 bg-background border-t">
-      <div className="container flex flex-col items-center justify-center gap-4 md:h-24 md:flex-row">
+    <footer className="border-t bg-background py-6 md:px-8 md:py-0">
+      <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
         <p className="text-balance text-center text-sm leading-loose text-muted-foreground">
-          &copy; {currentYear} Joao Basanta. All rights reserved.
+          &copy; {currentYear} Joao Basanta. {dictionary.footer.rights}
+        </p>
+        <p className="text-center text-sm text-muted-foreground">
+          {dictionary.footer.tagline}
         </p>
       </div>
     </footer>
