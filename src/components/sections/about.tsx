@@ -63,7 +63,7 @@ export default function AboutSection() {
           <div className="relative">
             <div className="absolute inset-x-8 top-8 -z-10 h-72 rounded-[2rem] bg-primary/10 blur-3xl" />
             <Card className="overflow-hidden rounded-[2rem] border-border/70 bg-card/95 shadow-2xl shadow-primary/10">
-              <CardContent className="space-y-6 p-6 md:p-8">
+              <CardContent className="p-6 md:p-8">
                 {profilePic && (
                   <div className="overflow-hidden rounded-[1.5rem] border border-border/70 bg-secondary">
                     <Image
@@ -76,7 +76,6 @@ export default function AboutSection() {
                     />
                   </div>
                 )}
-                <div className="border-t border-border/70 pt-1" />
               </CardContent>
             </Card>
           </div>
