@@ -52,6 +52,7 @@ export default function ProjectsSection() {
                     data-ai-hint={projectImage.imageHint}
                     width={600}
                     height={400}
+                    sizes="(min-width: 1280px) 50vw, 100vw"
                     className="h-56 w-full object-cover"
                   />
                 )}

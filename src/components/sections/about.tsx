@@ -72,6 +72,8 @@ export default function AboutSection() {
                       data-ai-hint={profilePic.imageHint}
                       width={520}
                       height={520}
+                      priority
+                      sizes="(min-width: 1024px) 520px, 100vw"
                       className="aspect-[4/4.2] w-full object-cover object-top"
                     />
                   </div>
