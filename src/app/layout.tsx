@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Joao Basanta | Especialista en Automatizacion TI",
   description:
     "Portafolio de Joao Basanta, especialista en automatizacion TI, soporte, datos e integracion de procesos con Python, PowerShell, VBA, n8n y SAP.",
+  verification: {
+    google: "pfh1Ag3WeFPI93-rCcC6iNFF2A4dnBF2jWYsPikh5HE",
+  },
 };
 
 export default function RootLayout({
