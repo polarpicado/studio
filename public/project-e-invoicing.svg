@@ -1,0 +1,99 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#0D1021"/>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g opacity="0.55" filter="url(#blurLg)">
+    <circle cx="300" cy="210" r="200" fill="#2EE6A6"/>
+    <circle cx="1240" cy="200" r="210" fill="#38D6FF"/>
+    <circle cx="900" cy="690" r="230" fill="#8A54FF"/>
+  </g>
+  <rect x="118" y="118" width="1364" height="664" rx="38" fill="rgba(15,18,39,0.72)" stroke="rgba(255,255,255,0.11)"/>
+
+  <!-- Compras (hoja de calculo) -->
+  <rect x="176" y="170" width="440" height="562" rx="28" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="218" y="214" width="170" height="22" rx="11" fill="#E3FFF4"/>
+  <rect x="218" y="252" width="230" height="16" rx="8" fill="white" fill-opacity="0.42"/>
+  <g>
+    <rect x="218" y="310" width="356" height="62" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+    <circle cx="252" cy="341" r="12" fill="#2EE6A6"/>
+    <rect x="280" y="334" width="150" height="14" rx="7" fill="white" fill-opacity="0.6"/>
+    <rect x="474" y="332" width="76" height="18" rx="9" fill="#2EE6A6" fill-opacity="0.35"/>
+
+    <rect x="218" y="390" width="356" height="62" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+    <circle cx="252" cy="421" r="12" fill="#2EE6A6"/>
+    <rect x="280" y="414" width="124" height="14" rx="7" fill="white" fill-opacity="0.6"/>
+    <rect x="474" y="412" width="76" height="18" rx="9" fill="#2EE6A6" fill-opacity="0.35"/>
+
+    <rect x="218" y="470" width="356" height="62" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+    <circle cx="252" cy="501" r="12" fill="#38D6FF"/>
+    <rect x="280" y="494" width="168" height="14" rx="7" fill="white" fill-opacity="0.6"/>
+    <rect x="474" y="492" width="76" height="18" rx="9" fill="#38D6FF" fill-opacity="0.35"/>
+
+    <rect x="218" y="550" width="356" height="62" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+    <circle cx="252" cy="581" r="12" fill="#FFB547"/>
+    <rect x="280" y="574" width="110" height="14" rx="7" fill="white" fill-opacity="0.6"/>
+    <rect x="474" y="572" width="76" height="18" rx="9" fill="#FFB547" fill-opacity="0.35"/>
+
+    <rect x="218" y="630" width="356" height="62" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.1)"/>
+    <circle cx="252" cy="661" r="12" fill="#2EE6A6"/>
+    <rect x="280" y="654" width="140" height="14" rx="7" fill="white" fill-opacity="0.6"/>
+    <rect x="474" y="652" width="76" height="18" rx="9" fill="#2EE6A6" fill-opacity="0.35"/>
+  </g>
+
+  <!-- Flujo de automatizacion -->
+  <path d="M616 451H700" stroke="url(#flow)" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 22"/>
+  <rect x="700" y="254" width="200" height="394" rx="28" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)"/>
+  <circle cx="800" cy="330" r="38" fill="rgba(46,230,166,0.18)" stroke="rgba(46,230,166,0.45)" stroke-width="3"/>
+  <path d="M784 330L796 342L818 318" stroke="#2EE6A6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M800 368V414" stroke="rgba(255,255,255,0.25)" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="800" cy="451" r="38" fill="rgba(56,214,255,0.18)" stroke="rgba(56,214,255,0.45)" stroke-width="3"/>
+  <path d="M786 438H814M786 451H814M786 464H804" stroke="#38D6FF" stroke-width="6" stroke-linecap="round"/>
+  <path d="M800 489V534" stroke="rgba(255,255,255,0.25)" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="800" cy="572" r="38" fill="rgba(138,84,255,0.2)" stroke="rgba(138,84,255,0.5)" stroke-width="3"/>
+  <path d="M784 572H812M800 558L814 572L800 586" stroke="#B794FF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M900 451H984" stroke="url(#flow)" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 22"/>
+
+  <!-- Comprobante electronico -->
+  <rect x="984" y="170" width="440" height="562" rx="28" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="1060" y="206" width="288" height="420" rx="24" fill="#F4F7FF" fill-opacity="0.95"/>
+  <rect x="1060" y="206" width="288" height="74" rx="24" fill="url(#heroCard)"/>
+  <rect x="1060" y="250" width="288" height="30" fill="url(#heroCard)"/>
+  <rect x="1090" y="232" width="130" height="18" rx="9" fill="white"/>
+  <rect x="1090" y="310" width="180" height="14" rx="7" fill="#1A1E3A" fill-opacity="0.55"/>
+  <rect x="1090" y="338" width="120" height="12" rx="6" fill="#1A1E3A" fill-opacity="0.3"/>
+  <path d="M1090 382H1318" stroke="#1A1E3A" stroke-opacity="0.12" stroke-width="3"/>
+  <rect x="1090" y="404" width="150" height="12" rx="6" fill="#1A1E3A" fill-opacity="0.35"/>
+  <rect x="1268" y="404" width="50" height="12" rx="6" fill="#1A1E3A" fill-opacity="0.35"/>
+  <rect x="1090" y="432" width="120" height="12" rx="6" fill="#1A1E3A" fill-opacity="0.35"/>
+  <rect x="1268" y="432" width="50" height="12" rx="6" fill="#1A1E3A" fill-opacity="0.35"/>
+  <path d="M1090 470H1318" stroke="#1A1E3A" stroke-opacity="0.12" stroke-width="3"/>
+  <rect x="1090" y="492" width="90" height="16" rx="8" fill="#1A1E3A" fill-opacity="0.6"/>
+  <rect x="1238" y="490" width="80" height="20" rx="10" fill="#1A1E3A" fill-opacity="0.75"/>
+  <rect x="1090" y="540" width="64" height="64" rx="8" fill="#1A1E3A" fill-opacity="0.18"/>
+  <rect x="1102" y="552" width="16" height="16" rx="3" fill="#1A1E3A" fill-opacity="0.5"/>
+  <rect x="1126" y="576" width="16" height="16" rx="3" fill="#1A1E3A" fill-opacity="0.5"/>
+  <circle cx="1318" cy="612" r="46" fill="#2EE6A6"/>
+  <path d="M1296 612L1312 628L1342 596" stroke="#0D1021" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="1060" y="664" width="132" height="34" rx="17" fill="rgba(46,230,166,0.18)" stroke="rgba(46,230,166,0.4)"/>
+  <rect x="1206" y="664" width="132" height="34" rx="17" fill="rgba(56,214,255,0.16)" stroke="rgba(56,214,255,0.32)"/>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12152A"/>
+      <stop offset="1" stop-color="#191C3B"/>
+    </linearGradient>
+    <linearGradient id="flow" x1="616" y1="451" x2="984" y2="451" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2EE6A6"/>
+      <stop offset="0.5" stop-color="#38D6FF"/>
+      <stop offset="1" stop-color="#8A54FF"/>
+    </linearGradient>
+    <linearGradient id="heroCard" x1="1060" y1="206" x2="1348" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2EE6A6"/>
+      <stop offset="1" stop-color="#8A54FF"/>
+    </linearGradient>
+    <filter id="blurLg" x="-194" y="-300" width="1742" height="1272" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur stdDeviation="140" result="effect1_foregroundBlur_1_1"/>
+    </filter>
+  </defs>
+</svg>

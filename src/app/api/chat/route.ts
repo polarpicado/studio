@@ -5,8 +5,12 @@ type ChatRequestPayload = {
   sessionId?: string;
 };
 
-const CHAT_ENDPOINT =
-  "https://caritive-corrosively-natalia.ngrok-free.dev/api/portfolio/chat";
+const BACKEND_URL = (
+  process.env.BACKEND_URL ||
+  "https://caritive-corrosively-natalia.ngrok-free.dev"
+).replace(/\/+$/, "");
+
+const CHAT_ENDPOINT = `${BACKEND_URL}/api/portfolio/chat`;
 
 function extractChatAnswer(payload: unknown): string | null {
   if (!payload || typeof payload !== "object") {

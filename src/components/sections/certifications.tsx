@@ -31,28 +31,44 @@ export default function CertificationsSection() {
           </p>
         </div>
         <div className="mx-auto mt-12 grid max-w-5xl gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {visibleCerts.map((cert) => (
-            <Link
-              key={cert.name}
-              href={cert.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex items-start gap-4 rounded-[1.5rem] bg-card p-5 transition-colors hover:bg-card/90"
-            >
-              <div className="rounded-full bg-primary/10 p-3 text-primary">
-                <Award className="h-6 w-6" />
+          {visibleCerts.map((cert) => {
+            const content = (
+              <>
+                <div className="rounded-full bg-primary/10 p-3 text-primary">
+                  <Award className="h-6 w-6" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="flex items-center gap-2 text-base font-bold">
+                    {cert.name}
+                    {cert.url && (
+                      <ExternalLink className="h-4 w-4 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100" />
+                    )}
+                  </h3>
+                  <p className="text-sm text-muted-foreground">
+                    {cert.issuer} - {cert.year}
+                  </p>
+                </div>
+              </>
+            );
+            const className =
+              "group flex items-start gap-4 rounded-[1.5rem] bg-card p-5 transition-colors";
+
+            return cert.url ? (
+              <Link
+                key={cert.name}
+                href={cert.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${className} hover:bg-card/90`}
+              >
+                {content}
+              </Link>
+            ) : (
+              <div key={cert.name} className={className}>
+                {content}
               </div>
-              <div className="flex-1">
-                <h3 className="flex items-center gap-2 text-base font-bold">
-                  {cert.name}
-                  <ExternalLink className="h-4 w-4 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100" />
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {cert.issuer} - {cert.year}
-                </p>
-              </div>
-            </Link>
-          ))}
+            );
+          })}
         </div>
         {dictionary.certifications.certificationList.length > VISIBLE_ITEMS && (
           <div className="mt-8 flex justify-center">

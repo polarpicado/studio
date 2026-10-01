@@ -154,6 +154,24 @@ export const dictionary = {
         demoUrl: "https://caritive-corrosively-natalia.ngrok-free.dev/chat/",
       },
       {
+        id: "e-invoicing",
+        tag: "Automation + Invoicing",
+        title: "Automated Electronic Receipts (SUNAT, Peru)",
+        summary:
+          "n8n workflow that turns an online training company's sales into electronic receipts issued to Peru's tax authority, with no manual work.",
+        problem:
+          "Every course sale had to be issued manually as an electronic receipt, with different VAT rules for Peruvian and foreign customers.",
+        solution:
+          "Workflow that reads approved sales, validates amounts, prevents duplicates, builds the UBL 2.1 document, issues it via API, and archives the PDF.",
+        result:
+          "Around 200 receipts per month issued automatically, with a full issuance log and a simulation mode to review before issuing.",
+        metrics: [
+          { value: "~200/mo", label: "receipts issued automatically" },
+          { value: "VAT + export", label: "tax rules based on customer country" },
+        ],
+        technologies: ["n8n", "API SUNAT", "Google Sheets", "Hotmart", "UBL 2.1", "Gmail"],
+      },
+      {
         id: "portfolio-web",
         tag: "Personal website",
         title: "Professional Portfolio (Next.js)",
@@ -217,15 +235,34 @@ export const dictionary = {
   certifications: {
     title: "Relevant certifications",
     description:
-      "Continuous learning aligned with data, cloud, cybersecurity, and IT support.",
+      "Continuous learning in automation, applied AI, data, cloud, cybersecurity, and IT support.",
     showMore: "Show more",
     showLess: "Show less",
     certificationList: [
       {
-        name: "Data Science 1: Exploratory Data Analysis",
-        issuer: "Universidad Nacional de Ingenieria",
-        year: "Aug 2025",
-        url: "https://certificados.uni.edu.pe/verificador/search.php?cert_id=cert_263e2acd67e0e3d62edb290d09359470",
+        name: "Business Process Management (BPM) & Robotic Process Automation (RPA)",
+        issuer: "New Horizons",
+        year: "Jun 2026",
+      },
+      {
+        name: "n8n: AI Agents from Zero to Expert",
+        issuer: "A1 Cursos",
+        year: "Apr 2026",
+      },
+      {
+        name: "Automation with n8n and Artificial Intelligence",
+        issuer: "Raiola Networks",
+        year: "Apr 2026",
+      },
+      {
+        name: "Fundamental Artificial Intelligence Tools",
+        issuer: "Skill - Centro de capacitacion",
+        year: "Jul 2026",
+      },
+      {
+        name: "AI-Assisted Development",
+        issuer: "BIG school",
+        year: "Oct 2025",
       },
       {
         name: "ITIL Foundations",
@@ -234,22 +271,73 @@ export const dictionary = {
         url: "https://drive.google.com/file/d/17cJ91QFo3T3NHP-N8Ny8tdbtO7MsSThn/view",
       },
       {
+        name: "Data Science 1: Exploratory Data Analysis",
+        issuer: "Universidad Nacional de Ingenieria",
+        year: "Aug 2025",
+        url: "https://certificados.uni.edu.pe/verificador/search.php?cert_id=cert_263e2acd67e0e3d62edb290d09359470",
+      },
+      {
+        name: "Power BI with Excel",
+        issuer: "Municipalidad de Jesus Maria",
+        year: "Feb 2026",
+      },
+      {
         name: "Cloud Computing: AWS - Azure - Google Cloud",
         issuer: "Universidad Nacional de Ingenieria",
         year: "Feb 2025",
         url: "https://certificados.uni.edu.pe/verificador/search.php?cert_id=cert_d27ff302798bfde709cac757dee47b82",
       },
       {
-        name: "Power BI",
-        issuer: "Fundacion Telefonica",
-        year: "Jun 2025",
-        url: "https://drive.google.com/file/d/1le3tyCCaVHuM2MKy8kCEmeWlxsseIz5m/view",
+        name: "SQL Server",
+        issuer: "Skill - Centro de capacitacion",
+        year: "Aug 2025",
+      },
+      {
+        name: "PostgreSQL",
+        issuer: "Skill - Centro de capacitacion",
+        year: "Aug 2025",
+      },
+      {
+        name: "MySQL",
+        issuer: "Skill - Centro de capacitacion",
+        year: "Aug 2025",
+      },
+      {
+        name: "Cybersecurity: CyberSOC",
+        issuer: "Universidad Nacional de Ingenieria",
+        year: "Feb 2025",
+      },
+      {
+        name: "Cybersecurity: Ethical Hacking",
+        issuer: "Universidad Nacional de Ingenieria",
+        year: "Feb 2025",
+      },
+      {
+        name: "Cybersecurity: Web Application Pentesting",
+        issuer: "Universidad Nacional de Ingenieria",
+        year: "Feb 2025",
       },
       {
         name: "Advanced Excel",
         issuer: "Fundacion Telefonica",
         year: "Jun 2025",
         url: "https://drive.google.com/file/d/1uS28hVzxefg2b9iswqMvE_4ATYtQbWsd/view",
+      },
+      {
+        name: "Introduction to Power BI",
+        issuer: "Fundacion Telefonica",
+        year: "Jun 2025",
+        url: "https://drive.google.com/file/d/1le3tyCCaVHuM2MKy8kCEmeWlxsseIz5m/view",
+      },
+      {
+        name: "Big Data Fundamentals",
+        issuer: "Fundacion Telefonica",
+        year: "Jun 2025",
+      },
+      {
+        name: "Java Standard Programming",
+        issuer: "Fundacion Telefonica",
+        year: "Jun 2025",
       },
       {
         name: "Python (Basic)",
@@ -259,15 +347,24 @@ export const dictionary = {
       },
       {
         name: "Scrum Fundamentals Certified",
-        issuer: "Vabro.ai and VMEdu.com",
+        issuer: "VMEdu.com",
         year: "Nov 2022",
-        url: "https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-JoaoBasanta-950646.pdf",
+      },
+      {
+        name: "Mobile App Development",
+        issuer: "Google Espana",
+        year: "Oct 2022",
       },
       {
         name: "AWS Cloud Practitioner Essentials Day",
         issuer: "AWS Training Online",
         year: "Oct 2022",
         url: "https://drive.google.com/file/d/1QvDN5tJirVaD1rhM5ARumkjd_vbKqFBX/view",
+      },
+      {
+        name: "SQL Server For Analytics",
+        issuer: "WE Educacion Ejecutiva",
+        year: "Feb 2022",
       },
       {
         name: "Networking Essentials",

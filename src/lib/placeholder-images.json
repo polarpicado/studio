@@ -13,6 +13,12 @@
       "imageHint": "ai support platform"
     },
     {
+      "id": "e-invoicing",
+      "description": "An automation flow turning online sales into accepted electronic receipts.",
+      "imageUrl": "/project-e-invoicing.svg",
+      "imageHint": "electronic invoicing automation"
+    },
+    {
       "id": "portfolio-web",
       "description": "A polished portfolio website interface with sections, metrics, and AI integration.",
       "imageUrl": "/project-portfolio-web.svg",

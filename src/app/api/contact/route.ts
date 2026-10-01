@@ -6,6 +6,13 @@ type ContactPayload = {
   message?: string;
 };
 
+const BACKEND_URL = (
+  process.env.BACKEND_URL ||
+  "https://caritive-corrosively-natalia.ngrok-free.dev"
+).replace(/\/+$/, "");
+
+const CONTACT_ENDPOINT = `${BACKEND_URL}/api/portfolio/formulario-web`;
+
 export async function POST(request: Request) {
   try {
     const body = (await request.json()) as ContactPayload;
@@ -19,7 +26,7 @@ export async function POST(request: Request) {
     }
 
     const upstreamResponse = await fetch(
-      "https://caritive-corrosively-natalia.ngrok-free.dev/api/portfolio/formulario-web",
+      CONTACT_ENDPOINT,
       {
         method: "POST",
         headers: {
