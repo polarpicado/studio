@@ -1,12 +1,20 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowRight, MessageSquareText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { useLanguage } from "@/context/language-context";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
+import { smoothScrollTo } from "@/lib/smooth-scroll";
+
+const handleAnchorClick = (
+  e: React.MouseEvent<HTMLAnchorElement>,
+  href: string
+) => {
+  e.preventDefault();
+  smoothScrollTo(href);
+};
 
 export default function AboutSection() {
   const profilePic = PlaceHolderImages.find((img) => img.id === "profile-pic");
@@ -30,10 +38,10 @@ export default function AboutSection() {
 
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Button asChild size="lg" className="rounded-full px-6">
-                <Link href="#featured">
+                <a href="#featured" onClick={(e) => handleAnchorClick(e, "#featured")}>
                   <ArrowRight className="mr-2 h-5 w-5" />
                   {dictionary.hero.viewDemo}
-                </Link>
+                </a>
               </Button>
               <Button
                 asChild
@@ -41,10 +49,10 @@ export default function AboutSection() {
                 variant="outline"
                 className="rounded-full border-primary/25 px-6"
               >
-                <Link href="#projects">
+                <a href="#projects" onClick={(e) => handleAnchorClick(e, "#projects")}>
                   <ArrowRight className="mr-2 h-5 w-5" />
                   {dictionary.hero.viewProjects}
-                </Link>
+                </a>
               </Button>
               <Button
                 asChild
@@ -52,10 +60,10 @@ export default function AboutSection() {
                 variant="outline"
                 className="rounded-full border-primary/25 px-6"
               >
-                <Link href="#contact">
+                <a href="#contact" onClick={(e) => handleAnchorClick(e, "#contact")}>
                   <MessageSquareText className="mr-2 h-5 w-5" />
                   {dictionary.hero.contact}
-                </Link>
+                </a>
               </Button>
             </div>
           </div>

@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useLanguage } from "@/context/language-context";
+import { smoothScrollTo } from "@/lib/smooth-scroll";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -24,12 +25,8 @@ export default function Header() {
     href: string
   ) => {
     e.preventDefault();
-    if (href === "#") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
-    }
     setIsSheetOpen(false);
+    smoothScrollTo(href);
   };
 
   const navLinks = (

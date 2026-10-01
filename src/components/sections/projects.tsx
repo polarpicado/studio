@@ -2,9 +2,17 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Lock, Workflow } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import {
   Card,
   CardContent,
@@ -38,6 +46,10 @@ export default function ProjectsSection() {
             const demoUrl =
               "demoUrl" in project && typeof project.demoUrl === "string"
                 ? project.demoUrl
+                : undefined;
+            const flowSteps =
+              "flowSteps" in project && Array.isArray(project.flowSteps)
+                ? project.flowSteps
                 : undefined;
 
             return (
@@ -125,6 +137,39 @@ export default function ProjectsSection() {
                   </div>
                 </CardContent>
                 <CardFooter className="gap-2">
+                  {flowSteps && (
+                    <Dialog>
+                      <DialogTrigger asChild>
+                        <Button variant="outline" className="w-full rounded-full">
+                          <Workflow className="mr-2" />
+                          {dictionary.projects.viewFlow}
+                        </Button>
+                      </DialogTrigger>
+                      <DialogContent className="max-h-[90dvh] overflow-y-auto sm:max-w-lg">
+                        <DialogHeader>
+                          <DialogTitle>{dictionary.projects.flowTitle}</DialogTitle>
+                          <DialogDescription>{project.title}</DialogDescription>
+                        </DialogHeader>
+                        <ol className="relative space-y-4 pl-1">
+                          {flowSteps.map((step, index) => (
+                            <li key={step} className="relative flex gap-4">
+                              {index < flowSteps.length - 1 && (
+                                <span className="absolute left-4 top-9 h-[calc(100%-1.25rem)] w-px bg-gradient-to-b from-primary/50 to-primary/10" />
+                              )}
+                              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/15 text-sm font-bold text-primary">
+                                {index + 1}
+                              </span>
+                              <p className="pt-1 text-sm leading-6 text-foreground">{step}</p>
+                            </li>
+                          ))}
+                        </ol>
+                        <p className="flex items-center gap-2 rounded-2xl bg-secondary p-3 text-xs text-muted-foreground">
+                          <Lock className="h-4 w-4 shrink-0" />
+                          {dictionary.projects.confidential}
+                        </p>
+                      </DialogContent>
+                    </Dialog>
+                  )}
                   {project.githubUrl && (
                     <Button asChild variant="outline" className="w-full rounded-full">
                       <Link

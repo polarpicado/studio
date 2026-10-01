@@ -58,29 +58,30 @@
       },
     ],
   },
-  metrics: {
-    items: [
+  process: {
+    title: "Como trabajo",
+    description:
+      "Un proceso simple para pasar de una tarea manual a un flujo que corre solo y se puede confiar.",
+    steps: [
       {
-        label: "Tiempo ahorrado",
-        value: "6h -> 30 min",
-        description: "Automatizacion de reportes operativos y consolidacion de datos.",
-      },
-      {
-        label: "Reduccion manual",
-        value: "-75%",
-        description: "Procesos ETL y tareas repetitivas integradas con SAP y hojas de control.",
-      },
-      {
-        label: "Provision interna",
-        value: "3h -> 10 s",
+        title: "Entiendo el proceso",
         description:
-          "Generacion automatica de firmas corporativas a partir de Active Directory.",
+          "Mapeo como se hace hoy la tarea, donde se pierde tiempo y que datos y sistemas intervienen.",
       },
       {
-        label: "Eficiencia",
-        value: "-83.3%",
+        title: "Defino el flujo",
         description:
-          "Ejecuciones repetitivas reducidas con scripts Python y automatizacion programada.",
+          "Establezco los pasos, las reglas de negocio y los casos borde antes de escribir codigo.",
+      },
+      {
+        title: "Conecto sistemas e IA",
+        description:
+          "Integro APIs, bases de datos, n8n y modelos de IA para que el trabajo se haga sin intervencion manual.",
+      },
+      {
+        title: "Valido y mejoro",
+        description:
+          "Pruebo con casos reales, dejo registro de cada ejecucion y ajusto hasta que el flujo sea confiable.",
       },
     ],
   },
@@ -133,6 +134,10 @@
     problemLabel: "Problema",
     solutionLabel: "Solucion",
     resultLabel: "Resultado",
+    viewFlow: "Ver como funciona",
+    flowTitle: "Como funciona el flujo",
+    confidential:
+      "Proyecto para un cliente: el codigo y los datos son confidenciales.",
     projectList: [
       {
         id: "chatbot-rag",
@@ -171,6 +176,15 @@
           { value: "IGV + exportacion", label: "reglas tributarias segun pais del cliente" },
         ],
         technologies: ["n8n", "API SUNAT", "Google Sheets", "Hotmart", "UBL 2.1", "Gmail"],
+        flowSteps: [
+          "Lee las ventas aprobadas y las solicitudes manuales desde Google Sheets.",
+          "Valida importe, pais y documento del comprador.",
+          "Descarta duplicados con una tabla de control por transaccion.",
+          "Aplica IGV para clientes peruanos o exportacion para extranjeros y arma el comprobante UBL 2.1.",
+          "Obtiene el correlativo y emite la boleta por API.",
+          "Consulta el estado ante SUNAT, descarga el PDF y lo envia por correo.",
+          "Registra cada emision en un historial, con modo simulacion para revisar antes de emitir.",
+        ],
       },
       {
         id: "portfolio-web",

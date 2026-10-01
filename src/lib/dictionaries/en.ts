@@ -57,29 +57,30 @@ export const dictionary = {
       },
     ],
   },
-  metrics: {
-    items: [
+  process: {
+    title: "How I work",
+    description:
+      "A simple process to turn a manual task into a workflow that runs on its own and can be trusted.",
+    steps: [
       {
-        label: "Time saved",
-        value: "6h -> 30 min",
-        description: "Operational reporting and data consolidation automation.",
-      },
-      {
-        label: "Manual reduction",
-        value: "-75%",
-        description: "ETL and repetitive tasks integrated with SAP and control sheets.",
-      },
-      {
-        label: "Internal provisioning",
-        value: "3h -> 10 s",
+        title: "Understand the process",
         description:
-          "Automatic corporate signature generation from Active Directory.",
+          "I map how the task is done today, where time is lost, and which data and systems are involved.",
       },
       {
-        label: "Efficiency",
-        value: "-83.3%",
+        title: "Design the automation",
         description:
-          "Repetitive execution time reduced with Python scripts and scheduled automation.",
+          "I define the flow, business rules, and edge cases before writing code.",
+      },
+      {
+        title: "Connect systems and AI",
+        description:
+          "I integrate APIs, databases, n8n, and AI models so the work gets done without manual effort.",
+      },
+      {
+        title: "Validate and improve",
+        description:
+          "I test with real cases, log every run, and refine until the workflow is reliable.",
       },
     ],
   },
@@ -132,6 +133,10 @@ export const dictionary = {
     problemLabel: "Problem",
     solutionLabel: "Solution",
     resultLabel: "Result",
+    viewFlow: "See how it works",
+    flowTitle: "How the workflow works",
+    confidential:
+      "Client project: code and data are confidential.",
     projectList: [
       {
         id: "chatbot-rag",
@@ -170,6 +175,15 @@ export const dictionary = {
           { value: "VAT + export", label: "tax rules based on customer country" },
         ],
         technologies: ["n8n", "API SUNAT", "Google Sheets", "Hotmart", "UBL 2.1", "Gmail"],
+        flowSteps: [
+          "Reads approved sales and manual requests from Google Sheets.",
+          "Validates amount, country, and buyer ID.",
+          "Skips duplicates using a per-transaction control table.",
+          "Applies VAT for Peruvian customers or export rules for foreign ones and builds the UBL 2.1 document.",
+          "Gets the next serial number and issues the receipt via API.",
+          "Checks its status with the tax authority, downloads the PDF, and emails it.",
+          "Logs every issuance, with a simulation mode to review before issuing.",
+        ],
       },
       {
         id: "portfolio-web",

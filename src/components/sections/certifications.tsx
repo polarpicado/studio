@@ -34,16 +34,14 @@ export default function CertificationsSection() {
           {visibleCerts.map((cert) => {
             const content = (
               <>
+                {cert.url && (
+                  <ExternalLink className="absolute right-5 top-5 h-4 w-4 text-muted-foreground opacity-40 transition-opacity group-hover:opacity-100" />
+                )}
                 <div className="rounded-full bg-primary/10 p-3 text-primary">
                   <Award className="h-6 w-6" />
                 </div>
-                <div className="flex-1">
-                  <h3 className="flex items-center gap-2 text-base font-bold">
-                    {cert.name}
-                    {cert.url && (
-                      <ExternalLink className="h-4 w-4 text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100" />
-                    )}
-                  </h3>
+                <div className="flex-1 pr-6">
+                  <h3 className="text-base font-bold">{cert.name}</h3>
                   <p className="text-sm text-muted-foreground">
                     {cert.issuer} - {cert.year}
                   </p>
@@ -51,7 +49,7 @@ export default function CertificationsSection() {
               </>
             );
             const className =
-              "group flex items-start gap-4 rounded-[1.5rem] bg-card p-5 transition-colors";
+              "group relative flex items-start gap-4 rounded-[1.5rem] bg-card p-5 transition-colors";
 
             return cert.url ? (
               <Link
