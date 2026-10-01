@@ -1,6 +1,7 @@
 const HEADER_OFFSET = 72;
 const MIN_DURATION = 600;
 const MAX_DURATION = 1700;
+const REDUCED_MOTION_DURATION = 450;
 
 // Curva suave: arranca y frena gradualmente, sin picos de velocidad
 const easeInOutSine = (t: number) => -(Math.cos(Math.PI * t) - 1) / 2;
@@ -21,17 +22,20 @@ export function smoothScrollTo(href: string) {
   const startY = window.scrollY;
   const distance = Math.max(0, targetY) - startY;
 
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    window.scrollTo({ top: startY + distance, behavior: "instant" });
-    return;
-  }
+  // Con "reducir movimiento" se mantiene un desplazamiento corto y suave en vez
+  // de un salto, que desorienta mas que una animacion breve
+  const reducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
 
   // La duracion crece con la distancia (raiz cuadrada) para que los trayectos
   // largos no se sientan bruscos ni los cortos lentos
-  const duration = Math.min(
-    MAX_DURATION,
-    Math.max(MIN_DURATION, 400 + Math.sqrt(Math.abs(distance)) * 17)
-  );
+  const duration = reducedMotion
+    ? REDUCED_MOTION_DURATION
+    : Math.min(
+        MAX_DURATION,
+        Math.max(MIN_DURATION, 400 + Math.sqrt(Math.abs(distance)) * 17)
+      );
   const start = performance.now();
 
   if (frame !== null) cancelAnimationFrame(frame);
