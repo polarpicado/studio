@@ -51,7 +51,7 @@
         href: "https://caritive-corrosively-natalia.ngrok-free.dev/servicedesk/",
       },
       {
-        title: "Repository",
+        title: "Repositorio",
         description:
           "Repositorio documental que alimenta el conocimiento del sistema",
         href: "https://caritive-corrosively-natalia.ngrok-free.dev/repository/",
