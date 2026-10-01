@@ -102,7 +102,7 @@ function LanguageSwitcher() {
           English
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setLanguage("es")}>
-          Espanol
+          Español
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>

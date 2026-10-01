@@ -1,9 +1,9 @@
 const HEADER_OFFSET = 72;
-const MIN_DURATION = 450;
-const MAX_DURATION = 1100;
+const MIN_DURATION = 600;
+const MAX_DURATION = 1700;
 
-const easeInOutCubic = (t: number) =>
-  t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+// Curva suave: arranca y frena gradualmente, sin picos de velocidad
+const easeInOutSine = (t: number) => -(Math.cos(Math.PI * t) - 1) / 2;
 
 let frame: number | null = null;
 
@@ -26,10 +26,11 @@ export function smoothScrollTo(href: string) {
     return;
   }
 
-  // La duracion crece con la distancia para que trayectos largos no se sientan bruscos
+  // La duracion crece con la distancia (raiz cuadrada) para que los trayectos
+  // largos no se sientan bruscos ni los cortos lentos
   const duration = Math.min(
     MAX_DURATION,
-    Math.max(MIN_DURATION, Math.abs(distance) * 0.45)
+    Math.max(MIN_DURATION, 400 + Math.sqrt(Math.abs(distance)) * 17)
   );
   const start = performance.now();
 
@@ -38,7 +39,7 @@ export function smoothScrollTo(href: string) {
   const step = (now: number) => {
     const progress = Math.min(1, (now - start) / duration);
     window.scrollTo({
-      top: startY + distance * easeInOutCubic(progress),
+      top: startY + distance * easeInOutSine(progress),
       behavior: "instant",
     });
     frame = progress < 1 ? requestAnimationFrame(step) : null;

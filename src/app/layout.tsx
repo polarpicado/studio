@@ -9,9 +9,9 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const siteUrl = "https://jbasanta.vercel.app";
-const siteTitle = "Joao Basanta | Automatizacion TI, IA y Sistemas Integrados";
+const siteTitle = "Joao Basanta | Automatización TI, IA y Sistemas Integrados";
 const siteDescription =
-  "Automatizacion TI, IA aplicada y sistemas integrados para soporte, tickets y datos. Proyectos, demos y contacto de Joao Basanta.";
+  "Automatización TI, IA aplicada y sistemas integrados para soporte, tickets y datos. Proyectos, demos y contacto de Joao Basanta.";
 
 const personStructuredData = {
   "@context": "https://schema.org",
@@ -19,7 +19,7 @@ const personStructuredData = {
   name: "Joao Basanta",
   url: siteUrl,
   image: `${siteUrl}/project-portfolio-web.svg`,
-  jobTitle: "Especialista en Automatizacion TI",
+  jobTitle: "Especialista en Automatización TI",
   description: siteDescription,
   sameAs: [
     "https://github.com/polarpicado",
