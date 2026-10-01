@@ -51,6 +51,14 @@ export default function ProjectsSection() {
               "flowSteps" in project && Array.isArray(project.flowSteps)
                 ? project.flowSteps
                 : undefined;
+            const flowImage =
+              "flowImage" in project && typeof project.flowImage === "string"
+                ? project.flowImage
+                : undefined;
+            const flowImageAlt =
+              "flowImageAlt" in project && typeof project.flowImageAlt === "string"
+                ? project.flowImageAlt
+                : project.title;
 
             return (
               <Card
@@ -145,11 +153,32 @@ export default function ProjectsSection() {
                           {dictionary.projects.viewFlow}
                         </Button>
                       </DialogTrigger>
-                      <DialogContent className="max-h-[90dvh] overflow-y-auto sm:max-w-lg">
+                      <DialogContent className="max-h-[90dvh] overflow-y-auto sm:max-w-3xl">
                         <DialogHeader>
                           <DialogTitle>{dictionary.projects.flowTitle}</DialogTitle>
                           <DialogDescription>{project.title}</DialogDescription>
                         </DialogHeader>
+                        {flowImage && (
+                          <a
+                            href={flowImage}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group/flow relative block overflow-hidden rounded-2xl border border-border/70"
+                          >
+                            <Image
+                              src={flowImage}
+                              alt={flowImageAlt}
+                              width={2540}
+                              height={1630}
+                              sizes="(min-width: 768px) 720px, 100vw"
+                              className="h-auto w-full transition-transform duration-500 group-hover/flow:scale-[1.02]"
+                            />
+                            <span className="absolute bottom-3 right-3 flex items-center gap-1 rounded-full bg-background/85 px-3 py-1 text-xs font-medium text-foreground backdrop-blur">
+                              <ExternalLink className="h-3 w-3" />
+                              {dictionary.projects.openFullImage}
+                            </span>
+                          </a>
+                        )}
                         <ol className="relative space-y-4 pl-1">
                           {flowSteps.map((step, index) => (
                             <li key={step} className="relative flex gap-4">

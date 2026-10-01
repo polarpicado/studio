@@ -91,14 +91,15 @@ export default function ContactSection() {
           <Button
             asChild
             size="lg"
-            className="w-full rounded-[1.25rem] bg-[#25D366] px-6 text-white hover:bg-[#1ebe5b]"
+            variant="outline"
+            className="group w-full rounded-full border-[#25D366]/50 bg-card/60 px-6 backdrop-blur hover:border-[#25D366] hover:bg-[#25D366] hover:text-white"
           >
             <a
               href={dictionary.contact.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <MessageCircle className="mr-2 h-5 w-5" />
+              <MessageCircle className="mr-2 h-5 w-5 text-[#25D366] transition-colors group-hover:text-white" />
               {dictionary.contact.whatsappLabel}
             </a>
           </Button>

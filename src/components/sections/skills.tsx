@@ -25,7 +25,7 @@ export default function SkillsSection() {
   const { dictionary } = useLanguage();
 
   return (
-    <section id="skills" className="w-full bg-muted/40 py-16 md:py-20 lg:py-24">
+    <section id="skills" className="w-full py-16 md:py-20 lg:py-24">
       <div className="container px-4 md:px-6">
         <div className="mx-auto max-w-3xl space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-5xl">

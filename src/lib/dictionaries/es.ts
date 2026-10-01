@@ -136,6 +136,7 @@
     resultLabel: "Resultado",
     viewFlow: "Ver como funciona",
     flowTitle: "Como funciona el flujo",
+    openFullImage: "Abrir imagen completa",
     confidential:
       "Proyecto para un cliente: el codigo y los datos son confidenciales.",
     projectList: [
@@ -176,6 +177,8 @@
           { value: "IGV + exportacion", label: "reglas tributarias segun pais del cliente" },
         ],
         technologies: ["n8n", "API SUNAT", "Google Sheets", "Hotmart", "UBL 2.1", "Gmail"],
+        flowImage: "/project-e-invoicing-flow.webp",
+        flowImageAlt: "Flujo en n8n de la emision de boletas",
         flowSteps: [
           "Lee las ventas aprobadas y las solicitudes manuales desde Google Sheets.",
           "Valida importe, pais y documento del comprador.",
