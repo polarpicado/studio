@@ -243,26 +243,31 @@ export const dictionary = {
         name: "Business Process Management (BPM) & Robotic Process Automation (RPA)",
         issuer: "New Horizons",
         year: "Jun 2026",
+        url: "https://drive.google.com/file/d/1Roqxu6mctfHrOkuHWji4cpv6lqQcNH0F/view",
       },
       {
         name: "n8n: AI Agents from Zero to Expert",
         issuer: "A1 Cursos",
         year: "Apr 2026",
+        url: "https://drive.google.com/file/d/1P4steAWZ09A0S11m4Qjb66u2HZBA3vJD/view",
       },
       {
         name: "Automation with n8n and Artificial Intelligence",
         issuer: "Raiola Networks",
         year: "Apr 2026",
+        url: "https://drive.google.com/file/d/1pHdzc8mcTn0ePAjKab1IMFu4wnuvqrOc/view",
       },
       {
         name: "Fundamental Artificial Intelligence Tools",
         issuer: "Skill - Centro de capacitacion",
         year: "Jul 2026",
+        url: "https://drive.google.com/file/d/1OJpxb5s_ISH3cTDfBiwS9m_NDU08hnZG/view",
       },
       {
         name: "AI-Assisted Development",
         issuer: "BIG school",
         year: "Oct 2025",
+        url: "https://drive.google.com/file/d/1PYfKwKL8h7XzV2r9xPbWGodx6tRK1tHB/view",
       },
       {
         name: "ITIL Foundations",

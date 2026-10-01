@@ -244,26 +244,31 @@
         name: "Business Process Management (BPM) & Robotic Process Automation (RPA)",
         issuer: "New Horizons",
         year: "jun. 2026",
+        url: "https://drive.google.com/file/d/1Roqxu6mctfHrOkuHWji4cpv6lqQcNH0F/view",
       },
       {
         name: "n8n: Agentes de IA de Cero a Experto",
         issuer: "A1 Cursos",
         year: "abr. 2026",
+        url: "https://drive.google.com/file/d/1P4steAWZ09A0S11m4Qjb66u2HZBA3vJD/view",
       },
       {
         name: "Automatizaciones con n8n e Inteligencia Artificial",
         issuer: "Raiola Networks",
         year: "abr. 2026",
+        url: "https://drive.google.com/file/d/1pHdzc8mcTn0ePAjKab1IMFu4wnuvqrOc/view",
       },
       {
         name: "Herramientas Fundamentales de Inteligencia Artificial",
         issuer: "Skill - Centro de capacitacion",
         year: "jul. 2026",
+        url: "https://drive.google.com/file/d/1OJpxb5s_ISH3cTDfBiwS9m_NDU08hnZG/view",
       },
       {
         name: "Desarrollo con IA",
         issuer: "BIG school",
         year: "oct. 2025",
+        url: "https://drive.google.com/file/d/1PYfKwKL8h7XzV2r9xPbWGodx6tRK1tHB/view",
       },
       {
         name: "Fundamentos de ITIL",
