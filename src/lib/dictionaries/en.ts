@@ -285,6 +285,7 @@ export const dictionary = {
         name: "Power BI with Excel",
         issuer: "Municipalidad de Jesus Maria",
         year: "Feb 2026",
+        url: "https://drive.google.com/file/d/1MeajeFVz7Pq-SzwQVHDC9sPYAaYMEmRi/view",
       },
       {
         name: "Cloud Computing: AWS - Azure - Google Cloud",
@@ -296,31 +297,37 @@ export const dictionary = {
         name: "SQL Server",
         issuer: "Skill - Centro de capacitacion",
         year: "Aug 2025",
+        url: "https://drive.google.com/file/d/1AbKVf9DrLJS3YfmqJfKhfLoDqHm0H9xy/view",
       },
       {
         name: "PostgreSQL",
         issuer: "Skill - Centro de capacitacion",
         year: "Aug 2025",
+        url: "https://drive.google.com/file/d/1uGspnxkyBrAN1O_pHOXcJcGdNf31nznv/view",
       },
       {
         name: "MySQL",
         issuer: "Skill - Centro de capacitacion",
         year: "Aug 2025",
+        url: "https://drive.google.com/file/d/17x_3Nn4dw4xCxpYiG26K7y71mRUDFQrf/view",
       },
       {
         name: "Cybersecurity: CyberSOC",
         issuer: "Universidad Nacional de Ingenieria",
         year: "Feb 2025",
+        url: "https://certificados.uni.edu.pe/verificador/search.php?cert_id=cert_ef22d4272cdc3b1a70acae3e7735565d",
       },
       {
         name: "Cybersecurity: Ethical Hacking",
         issuer: "Universidad Nacional de Ingenieria",
         year: "Feb 2025",
+        url: "https://certificados.uni.edu.pe/verificador/search.php?cert_id=cert_de5b725afef7fd4ac36e5d6c0bb1e9d4",
       },
       {
         name: "Cybersecurity: Web Application Pentesting",
         issuer: "Universidad Nacional de Ingenieria",
         year: "Feb 2025",
+        url: "https://certificados.uni.edu.pe/verificador/search.php?cert_id=cert_6872212f002c6f45e6fd121517c8b6bd",
       },
       {
         name: "Advanced Excel",
@@ -338,11 +345,13 @@ export const dictionary = {
         name: "Big Data Fundamentals",
         issuer: "Fundacion Telefonica",
         year: "Jun 2025",
+        url: "https://drive.google.com/file/d/1vAOo6z5p6UlYeEpLRRd_zBJU3OmyOqVV/view",
       },
       {
         name: "Java Standard Programming",
         issuer: "Fundacion Telefonica",
         year: "Jun 2025",
+        url: "https://drive.google.com/file/d/1vvIwSY3wWb4Vp-wopdKEFjSM7xoDKvPp/view",
       },
       {
         name: "Python (Basic)",
@@ -354,11 +363,13 @@ export const dictionary = {
         name: "Scrum Fundamentals Certified",
         issuer: "VMEdu.com",
         year: "Nov 2022",
+        url: "https://drive.google.com/file/d/1IERXUxMasgtR3hfr5sdoaUlaUHv_LhVb/view",
       },
       {
         name: "Mobile App Development",
         issuer: "Google Espana",
         year: "Oct 2022",
+        url: "https://drive.google.com/file/d/1yz4P9AaKb_qBqY5znhkk9gPDjlYrDCE0/view",
       },
       {
         name: "AWS Cloud Practitioner Essentials Day",
@@ -370,6 +381,7 @@ export const dictionary = {
         name: "SQL Server For Analytics",
         issuer: "WE Educacion Ejecutiva",
         year: "Feb 2022",
+        url: "https://drive.google.com/file/d/17oJTITj4dI9OVa4Mltl8jY72e8EINWI5/view",
       },
       {
         name: "Networking Essentials",
